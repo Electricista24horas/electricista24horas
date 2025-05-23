@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Electricista</title>
   <style>
     body {
@@ -25,30 +25,30 @@
     h1 {
       font-size: 54px;
       font-weight: bold;
-      margin: 5px 0 0px 0; /* espacio inferior reducido */
+      margin: 5px 0 0 0;
     }
 
     .matriculado {
       font-size: 34px;
-      margin: 0px 0 0px 0;
+      margin: 0;
     }
 
     .info {
       font-size: 50px;
-      margin: 0px 0 0px 0; /* Todos los días - menos margen abajo */
+      margin: 0;
       line-height: 1.4;
     }
 
     .contact {
       font-size: 28px;
-      margin: 0px 0 0px 0; /* Más cerca del texto anterior */
+      margin: 0;
       line-height: 1.4;
     }
 
     .name {
       font-size: 44px;
       font-weight: bold;
-      margin: 0px 0 0px 0; /* Luciano - menos espacio debajo */
+      margin: 0;
     }
 
     .phone {
@@ -62,9 +62,26 @@
     }
 
     .whatsapp-icon {
-      width: 70px;
-      height: 70px;
-      vertical-align: middle;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      border-radius: 50%;
+      padding: 5px;
+      background-color: #25D366;
+      animation: pulse 1.5s infinite;
+      box-shadow: 0 0 10px #25D366;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .whatsapp-icon:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 25px #1ebe5d;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 0 10px #25D366; }
+      50% { transform: scale(1.2); box-shadow: 0 0 20px #25D366; }
+      100% { transform: scale(1); box-shadow: 0 0 10px #25D366; }
     }
 
     .email {
@@ -86,19 +103,28 @@
   <div class="container">
     <h1>ELECTRICISTA</h1>
     <div class="matriculado">Matriculado 24hs.</div>
-    <div class="___________">_______________________________________________________________</div>
     <div class="info">C.A.B.A. y Gran Bs. As.</div>
-    <div class="info">Todos los dias!!!</div>
+    <div class="info">Todos los días!!!</div>
     <div class="contact">
-      Inclusive domingos y feriados.<br>
-      <strong>URGENCIAS.</strong> Soluciones en el día.<br>
+      Inclusive domingos y feriados.<br />
+      <strong>URGENCIAS.</strong> Soluciones en el día.<br />
       Consultas y llamadas al WhatsApp.
     </div>
-    <div class="___________">_______________________________________________________________</div>
     <div class="name">--Luciano--</div>
     <div class="phone">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
-      (11)5915-6129
+      <a
+        href="https://wa.me/5491159156129?text=Hola%20Luciano,%20necesito%20un%20electricista"
+        target="_blank"
+        style="display: flex; align-items: center; text-decoration: none; color: yellow; gap: 10px;"
+        title="Chatear por WhatsApp"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="WhatsApp"
+          class="whatsapp-icon"
+        />
+        <span>(11)5915-6129</span>
+      </a>
     </div>
     <div class="email">lucianodidiego@gmail.com</div>
   </div>
