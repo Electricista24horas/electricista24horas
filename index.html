@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Electricista</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #000000, #1a1a1a);
+      color: yellow;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 54px;
+      font-weight: bold;
+      margin: 5px 0 0px 0; /* espacio inferior reducido */
+    }
+
+    .matriculado {
+      font-size: 34px;
+      margin: 0px 0 0px 0;
+    }
+
+    .info {
+      font-size: 50px;
+      margin: 0px 0 0px 0; /* Todos los días - menos margen abajo */
+      line-height: 1.4;
+    }
+
+    .contact {
+      font-size: 28px;
+      margin: 0px 0 0px 0; /* Más cerca del texto anterior */
+      line-height: 1.4;
+    }
+
+    .name {
+      font-size: 44px;
+      font-weight: bold;
+      margin: 0px 0 0px 0; /* Luciano - menos espacio debajo */
+    }
+
+    .phone {
+      font-size: 44px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 4px 0 10px 0;
+    }
+
+    .whatsapp-icon {
+      width: 70px;
+      height: 70px;
+      vertical-align: middle;
+    }
+
+    .email {
+      font-size: 26px;
+      margin-top: 10px;
+      color: yellow;
+    }
+
+    @media (max-height: 700px) {
+      h1 { font-size: 80px; }
+      .matriculado { font-size: 70px; }
+      .info, .contact { font-size: 30px; }
+      .name, .phone { font-size: 50px; }
+      .email { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ELECTRICISTA</h1>
+    <div class="matriculado">Matriculado 24hs.</div>
+    <div class="___________">_______________________________________________________________</div>
+    <div class="info">C.A.B.A. y Gran Bs. As.</div>
+    <div class="info">Todos los dias!!!</div>
+    <div class="contact">
+      Inclusive domingos y feriados.<br>
+      <strong>URGENCIAS.</strong> Soluciones en el día.<br>
+      Consultas y llamadas al WhatsApp.
+    </div>
+    <div class="___________">_______________________________________________________________</div>
+    <div class="name">--Luciano--</div>
+    <div class="phone">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+      (11)5915-6129
+    </div>
+    <div class="email">lucianodidiego@gmail.com</div>
+  </div>
+</body>
+</html>
