@@ -24,19 +24,22 @@
       overflow-y: auto;
     }
     h1 {
-      font-size: 54px;
+      font-size: 70px; /* un poco más grande */
       font-weight: bold;
       margin: 5px 0 0 0;
       line-height: 1.1;
     }
     .matriculado {
-      font-size: 34px;
+      font-size: 48px; /* un poco más grande */
       margin: 0;
     }
     .info {
-      font-size: 50px;
+      font-size: 38px; /* más chico */
       margin: 0;
       line-height: 1.4;
+    }
+    .info.todos {
+      font-size: 34px; /* más chico para "Todos los días!!!" */
     }
     .contact {
       font-size: 28px;
@@ -86,17 +89,20 @@
       word-break: break-word;
     }
 
-    /* Aumento leve para móviles */
+    /* Ajustes móviles */
     @media (max-width: 600px) {
       h1 {
-        font-size: 36px;
+        font-size: 46px;
         line-height: 1.1;
       }
       .matriculado {
-        font-size: 26px;
+        font-size: 32px;
       }
       .info {
-        font-size: 26px;
+        font-size: 22px;
+      }
+      .info.todos {
+        font-size: 20px;
       }
       .contact {
         font-size: 20px;
@@ -148,7 +154,7 @@
     <h1>ELECTRICISTA</h1>
     <div class="matriculado">Matriculado 24hs.</div>
     <div class="info">C.A.B.A. y Gran Bs. As.</div>
-    <div class="info">Todos los días!!!</div>
+    <div class="info todos">Todos los días!!!</div>
     <div class="contact">
       Inclusive domingos y feriados.<br />
       <strong>URGENCIAS.</strong> Soluciones en el día.<br />
