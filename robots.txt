@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://www.electricista24horas.com.ar/sitemap.xml 
+Sitemap: https://electricista24horas.com.ar/sitemap.xml
