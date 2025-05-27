@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <title>Electricista</title>
+
+  <!-- Etiqueta viewport para que la página se adapte al ancho del celular -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <style>
     body {
       background: linear-gradient(to bottom, #000000, #1a1a1a);
@@ -78,14 +82,60 @@
       margin-top: 10px;
       color: yellow;
     }
+
+    /* Ajustes para pantallas pequeñas (celulares) */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 80px;
+      }
+      .matriculado {
+        font-size: 60px;
+      }
+      .info {
+        font-size: 45px;
+      }
+      .contact {
+        font-size: 32px;
+      }
+      .name {
+        font-size: 60px;
+      }
+      .phone {
+        font-size: 50px;
+        gap: 8px;
+      }
+      .whatsapp-icon {
+        width: 60px;
+        height: 60px;
+      }
+      .email {
+        font-size: 28px;
+      }
+      .container {
+        padding: 15px;
+      }
+    }
+
+    /* Ajustes para pantallas con poca altura */
     @media (max-height: 700px) {
-      h1 { font-size: 80px; }
-      .matriculado { font-size: 70px; }
-      .info, .contact { font-size: 30px; }
-      .name, .phone { font-size: 50px; }
-      .email { font-size: 20px; }
+      h1 {
+        font-size: 80px;
+      }
+      .matriculado {
+        font-size: 70px;
+      }
+      .info, .contact {
+        font-size: 30px;
+      }
+      .name, .phone {
+        font-size: 50px;
+      }
+      .email {
+        font-size: 20px;
+      }
     }
   </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
