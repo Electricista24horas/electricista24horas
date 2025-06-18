@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="es">
+       <head>
+      <meta charset="UTF-8" />
+      <title>Electricista Matriculado 24hs</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="Electricista matriculado 24 horas a domicilio. Urgencias eléctricas en CABA y Gran Buenos Aires. Consultas por WhatsApp." />
+      <style>
+         body {
+         background: linear-gradient(to bottom, #000000, #1a1a1a);
+         color: yellow;
+         font-family: Arial, sans-serif;
+         text-align: center;
+         margin: 0;
+         padding: 0;
+         position: relative;
+         min-height: 100vh;
+         }
+         .container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         min-height: 100vh;
+         padding: 20px;
+         box-sizing: border-box;
+         position: relative;
+         z-index: 1;
+         }
+         .caja-central {
+         border: 4px solid yellow;
+         background-color: black;
+         padding: 25px;
+         border-radius: 12px;
+         max-width: 585px;
+         margin-top: -10px;
+         z-index: 2;
+         position: relative;
+         width: 100%;
+         box-sizing: border-box;
+         }
+         h1 {
+         font-size: 70px;
+         font-weight: bold;
+         margin: 0 0 20px 0;
+         }
+         .matriculado { font-size: 48px; margin: 0; }
+         .info { font-size: 38px; line-height: 1.4; }
+         .info.todos { font-size: 34px; }
+         .contact { font-size: 28px; line-height: 1.4; }
+         .name { font-size: 44px; font-weight: bold; }
+         .phone {
+         font-size: 44px;
+         font-weight: bold;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 10px;
+         margin: 10px 0;
+         }
+         .phone a {
+         color: yellow;
+         text-decoration: none;
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         }
+         .phone a:hover {
+         text-decoration: underline;
+         }
+         .whatsapp-icon {
+         width: 50px;
+         height: 50px;
+         background-color: #25D366;
+         border-radius: 50%;
+         padding: 5px;
+         box-shadow: 0 0 10px #25D366;
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         animation: pulse 2s infinite ease-in-out;
+         }
+         .whatsapp-icon:hover {
+         transform: scale(1.2);
+         box-shadow: 0 0 25px #1ebe5d;
+         animation-play-state: paused;
+         }
+         @keyframes pulse {
+         0%, 100% {
+         transform: scale(1);
+         box-shadow: 0 0 10px #25D366;
+         }
+         50% {
+         transform: scale(1.1);
+         box-shadow: 0 0 20px #25D366;
+         }
+         }
+         .email { font-size: 26px; word-break: break-word; }
+         /* Cambié position absolute a fixed para no solapar en scroll y usar left/right fijo */
+         #copime-img, #logo-izquierdo {
+         position: absolute;  /* No fixed */
+         width: 328px;
+         max-width: 45vw;
+         height: auto;
+         border: 2px solid yellow;
+         border-radius: 8px;
+         background-color: black;
+         padding: 6px;
+         box-shadow: 0 0 10px yellow;
+         z-index: 10;
+         transition: top 0.2s ease;
+         }
+         #logo-izquierdo {
+         top: 10px;
+         left: 20px;
+         right: auto;
+         }
+         .review {
+         background-color: #111;
+         border: 1px solid #444;
+         border-radius: 10px;
+         padding: 15px;
+         margin-bottom: 20px;
+         }
+         .review-header {
+         display: flex;
+         justify-content: space-between;
+         font-weight: bold;
+         font-size: 20px;
+         }
+         .caja-servicios {
+         display: inline-block;
+         border: 4px solid black;
+         background-color: yellow;
+         padding: 15px 25px;
+         border-radius: 12px;
+         max-width: 600px;
+         margin-top: 40px;
+         color: black;
+         text-align: left;
+         font-size: 32px;
+         box-sizing: border-box;
+         z-index: 1;
+         position: relative;
+         }
+         .caja-servicios ul {
+         padding-left: 20px;
+         margin: 0;
+         list-style: none;
+         }
+         .caja-servicios li {
+         position: relative;
+         margin-bottom: 15px;
+         padding-left: 50px;
+         font-weight: 600;
+         }
+         .viñeta1::before,
+         .viñeta2::before,
+         .viñeta3::before,
+         .viñeta4::before,
+         .viñeta5::before {
+         content: "•";
+         position: absolute;
+         left: -0;
+         font-size: 60px;
+         color: black;
+         animation: bulletPulse 2s infinite ease-in-out;
+         top: -29px;
+         }
+         @keyframes bulletPulse {
+         0%, 100% {
+         transform: scale(1);
+         opacity: 1;
+         text-shadow: 0 0 5px black;
+         }
+         50% {
+         transform: scale(1.3);
+         opacity: 0.7;
+         text-shadow: 0 0 15px black;
+         }
+         }
+         .social-links {
+         display: flex;
+         justify-content: center;
+         gap: 20px;
+         margin-top: 40px;
+         flex-wrap: wrap;
+         z-index: 1;
+         position: relative;
+         }
+         .social-button {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         background-color: #111;
+         border: 2px solid yellow;
+         border-radius: 8px;
+         padding: 10px 20px;
+         color: yellow;
+         text-decoration: none;
+         font-size: 20px;
+         transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+         }
+         .social-button:hover {
+         background-color: yellow;
+         color: black;
+         transform: scale(1.05);
+         }
+         .social-button img {
+         width: 24px;
+         height: 24px;
+         }
+         #contador {
+         margin-top: 20px;
+         font-size: 16px;
+         color: #ccc;
+         }
+         /* Imágenes movibles */
+         .img-movable {
+         position: absolute; /* No fixed */
+         width: 300px;
+         border: 3px solid yellow;
+         border-radius: 10px;
+         cursor: grab;
+         z-index: 1000;
+         transition: top 0.2s ease; /* Para suavizar movimiento */
+         }
+         /* Posiciones iniciales */
+         .img-movable.izquierda1 {
+         top: 100px;
+         left: 10px;
+         }
+         .img-movable.izquierda2 {
+         top: 350px;
+         left: 10px;
+         }
+         .img-movable.derecha1 {
+         top: 200px;
+         right: 10px;
+         }
+         /* Ajusto la imagen derecha para que no solape con Copime */
+         #copime-img {
+         right: 5px;
+         top: 10px;
+         width: 350px;
+         max-width: 45vw;
+         height: auto;
+         border: 2px solid yellow;
+         border-radius: 8px;
+         background-color: black;
+         padding: 6px;
+         box-shadow: 0 0 10px yellow;
+         z-index: 10;
+         }
+         /* Ajusto la imagen derecha movible "Pago con tarjeta" */
+         .img-movable.derecha1 {
+         top: 360px; /* lo subí de 200px a 360px para que quede debajo de Copime y no se solape */
+         right: 10px;
+         width: 300px;
+         border: 3px solid yellow;
+         border-radius: 10px;
+         cursor: grab;
+         z-index: 1000;
+         }
+         @media (max-width: 600px) {
+         h1 { font-size: 46px; }
+         .matriculado { font-size: 32px; }
+         .info { font-size: 22px; }
+         .contact { font-size: 20px; }
+         .name, .phone { font-size: 26px; }
+         .email { font-size: 16px; }
+         #copime-img, #logo-izquierdo {
+         position: static;
+         max-width: 200px;
+         margin: 20px auto;
+         display: block;
+         }
+         /* Ajuste para imágenes movibles */
+         .img-movable {
+         position: static;
+         width: 100%;
+         max-width: 300px;
+         margin: 10px auto;
+         display: block;
+         }
+         }
+         @media (max-width: 768px) {
+         .container {
+         flex-direction: column;
+         padding: 10px;
+         }
+         img {
+         width: 100%;
+         height: auto;
+         position: static;
+         }
+         #copime-img,
+         #logo-izquierdo,
+         #edenor-img,
+         #edesur-img,
+         #pagocontarjeta-img,
+         #texto-derecha {
+         position: static !important;
+         width: 100% !important;
+         max-width: 300px;
+         margin: 10px auto;
+         display: block;
+         top: auto !important;
+         left: auto !important;
+         right: auto !important;
+         }
+         .img-movable {
+         position: static;
+         width: 100%;
+         max-width: 300px;
+         margin: 10px auto;
+         display: block;
+         }
+         h1 { font-size: 40px; }
+         .matriculado { font-size: 28px; }
+         .info, .info.todos { font-size: 20px; }
+         .contact { font-size: 18px; }
+         .name, .phone { font-size: 22px; }
+         .email { font-size: 16px; }
+         #texto-derecha { font-size: 20px; }
+         }
+         #edenor-img {
+         position: absolute;     /* permite mover libremente */
+         top: 700px;             /* cambiá este valor para mover verticalmente */
+         left: 10px;             /* cambiá este valor para mover horizontalmente */
+         width: 340px;           /* cambiá este valor para tamaño */
+         height: auto;           /* o poné: height: 180px; si querés control vertical */
+         border: 3px solid yellow;
+         border-radius: 10px;
+         background-color: black;
+         padding: 6px;
+         box-shadow: 0 0 10px yellow;
+         z-index: 100;
+         }
+         #edesur-img {
+         position: absolute;     /* permite mover libremente */
+         top: 900px;             /* cambiá este valor para mover verticalmente */
+         left: 10px;             /* cambiá este valor para mover horizontalmente */
+         width: 340px;           /* cambiá este valor para tamaño */
+         height: auto;           /* o poné: height: 180px; si querés control vertical */
+         border: 3px solid yellow;
+         border-radius: 10px;
+         background-color: black;
+         padding: 6px;
+         box-shadow: 0 0 10px yellow;
+         z-index: 100;
+         }
+         #pagocontarjeta-img {
+         position: absolute;     /* permite mover libremente */
+         top: 870px;             /* cambiá este valor para mover verticalmente */
+         left: 985px;             /* cambiá este valor para mover horizontalmente */
+         width: 320px;           /* cambiá este valor para tamaño */
+         height: auto;           /* o poné: height: 180px; si querés control vertical */
+         border: 3px solid yellow;
+         border-radius: 10px;
+         background-color: black;
+         padding: 6px;
+         box-shadow: 0 0 10px yellow;
+         z-index: 100;
+         }
+         /* Texto nuevo arriba de la imagen Pago con tarjeta */
+         #texto-derecha {
+         position: absolute;
+         top: 660px;
+         left: 985px;
+         z-index: 150;
+         width: 340px;
+         box-sizing: border-box;
+         background-color: black;
+         color: yellow;
+         font-size: 26px;
+         font-weight: bold;
+         padding: 10px;
+         border: 2px solid yellow;
+         border-radius: 8px;
+         text-align: center;
+         animation: titilar 1.5s infinite; /* <- agregado */
+         }
+         @keyframes titilar {
+         0%, 100% { opacity: 1; }
+         50% { opacity: 0; }
+         }
+         .boton-emergencia {
+         position: fixed;
+         bottom: 20px;
+         right: 20px;
+         background-color: red;
+         color: white;
+         padding: 15px 20px;
+         border-radius: 50px;
+         font-weight: bold;
+         font-size: 1.1rem;
+         text-decoration: none;
+         box-shadow: 0 0 15px rgba(0,0,0,0.5);
+         z-index: 9999;
+         animation: parpadeo 1s infinite;
+         transition: transform 0.2s ease;
+         }
+         .boton-emergencia:hover {
+         transform: scale(1.05);
+         }
+         @keyframes parpadeo {
+         0%, 100% { opacity: 1; }
+         50% { opacity: 0.6; }
+         }
+         /* Media query para pantallas pequeñas (celulares) */
+         @media (max-width: 480px) {
+         /* Ajustar tamaño de las imágenes movibles */
+         #edenor-img,
+         #edesur-img,
+         #pagocontarjeta-img {
+         width: 100px !important; /* tamaño más pequeño */
+         height: auto;
+         position: static !important; /* para que no estén absolutas y no se encimen */
+         margin: 5px auto;
+         display: block;
+         }
+         /* El contenedor central y otros elementos se adaptan */
+         .caja-central,
+         .caja-servicios,
+         #texto-derecha {
+         width: 90%;
+         margin: 10px auto;
+         text-align: center;
+         position: static !important;
+         }
+         /* Logos y otros */
+         #logo-izquierdo,
+         #copime-img {
+         width: 80px;
+         height: auto;
+         display: block;
+         margin: 10px auto;
+         position: static !important;
+         }
+         /* Para que el body no haga scroll horizontal */
+         body {
+         overflow-x: hidden;
+         }
+         
+         </style>
+   </head>
+   <body>
+      <div class="container">
+
+         <!-- 1. Recuadro central superior con texto -->
+         <div class="caja-central" role="main">
+            <h1>ELECTRICISTA</h1>
+            <div class="matriculado">Matriculado 24hs.</div>
+            <div class="info">C.A.B.A. y Gran Bs. As.</div>
+            <div class="info todos">Todos los días!!!</div>
+            <div class="contact">Inclusive domingos y feriados.<br /> <strong>URGENCIAS.</strong> Soluciones en el día.<br />Consultas y llamadas al WhatsApp.</div>
+            <div class="name">--Luciano--</div>
+            <div class="phone">
+               <a href="https://wa.me/5491159156129?text=Hola%20Luciano,%20necesito%20un%20electricista" target="_blank" title="WhatsApp">
+               <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon" />
+               (11)5915-6129
+               </a>
+            </div>
+            <div class="email">lucianodidiego@gmail.com</div>
+         </div>
+
+         <!-- 2. Imágenes de CTPBA y COPIME (lado a lado) -->
+    <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 20px;">
+      <img src="CTPBA.jpg" alt="Logo CTPBA" id="logo-izquierdo" />
+      <img src="copime.jpg" alt="COPIME" id="copime-img" />
+    </div>
+    
+         <!-- 3. Recuadro central inferior con texto -->
+                <div class="caja-servicios" aria-label="Servicios ofrecidos">
+            <ul>
+               <li class="viñeta1">Solicitud de Nuevo Medidor Monofásico/Trifásico</li>
+               <li class="viñeta2">Certificado DCI</li>
+               <li class="viñeta3">Armado de Pilar</li>
+               <li class="viñeta4">Trámites Edenor/Edesur</li>
+               <li class="viñeta5">Certificado Medición Puesta a Tierra (Res. SRT 900/2015)</li>
+            </ul>
+         </div>
+         
+         <!-- 4. Imagen de Edenor -->
+    <img src="EDENOR.jpg" alt="Edenor" id="edenor-img" class="img-movable" />
+
+    <!-- 5. Imagen de Edesur -->
+    <img src="EDESUR.jpg" alt="Edesur" id="edesur-img" class="img-movable" />
+
+    <!-- 6. Texto titilando "Financiamos tus obras" -->
+    <div id="texto-derecha">¡¡¡FINANCIAMOS TUS OBRAS!!!<br> Consultas y llamadas por WhatsApp.</div>
+
+    <!-- 7. Imagen de Pago con tarjeta -->
+    <img src="PAGO CON TARJETA.jpg" alt="Pago con tarjeta" id="pagocontarjeta-img" class="img-movable" />
+                           
+         <div class="social-links" role="contentinfo">
+            <a href="https://www.facebook.com/electricidadled/" target="_blank" class="social-button" title="Facebook">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook logo" />
+            Facebook
+            </a>
+            <a href="https://www.instagram.com/electricidadled/" target="_blank" class="social-button" title="Instagram">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram logo" />
+            Instagram
+            </a>
+            <a href="https://wa.me/5491159156129" target="_blank" class="social-button" title="WhatsApp">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp logo" />
+            WhatsApp
+            </a>
+            <a href="https://www.linkedin.com/in/electricidad-led" target="_blank" class="social-button" title="LinkedIn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn logo" />
+            LinkedIn
+            </a>
+         </div>
+         <div id="contador" aria-live="polite"></div>
+      </div>
+      <script>
+         // Seleccionamos las imágenes por su ID CORRECTO
+         const movableImages = [
+           document.getElementById('edenor-img'),
+           document.getElementById('edesur-img'),
+           document.getElementById('pagocontarjeta-img')
+         ];
+         
+         let currentDrag = null;
+         let offsetX = 0;
+         let offsetY = 0;
+         
+         movableImages.forEach(img => {
+           if (!img) return; // Por si alguna no está cargada
+           img.style.position = 'absolute';
+         
+           img.addEventListener('mousedown', (e) => {
+             currentDrag = img;
+             offsetX = e.clientX - img.getBoundingClientRect().left;
+             offsetY = e.clientY - img.getBoundingClientRect().top;
+             img.style.cursor = 'grabbing';
+             e.preventDefault();
+           });
+         });
+         
+         document.addEventListener('mousemove', (e) => {
+           if (currentDrag) {
+             let left = e.clientX - offsetX;
+             let top = e.clientY - offsetY;
+         
+             const maxLeft = window.innerWidth - currentDrag.offsetWidth;
+             const maxTop = window.innerHeight - currentDrag.offsetHeight;
+             if (left < 0) left = 0;
+             if (top < 0) top = 0;
+             if (left > maxLeft) left = maxLeft;
+             if (top > maxTop) top = maxTop;
+         
+             currentDrag.style.left = left + 'px';
+             currentDrag.style.top = top + 'px';
+           }
+         });
+         
+         document.addEventListener('mouseup', () => {
+           if (currentDrag) {
+             currentDrag.style.cursor = 'grab';
+             currentDrag = null;
+           }
+         });
+      </script>
+      <a href="tel:5491159156129" class="boton-emergencia" onclick="reproducirCazafantasmas()" title="Llamar ahora">
+      🚨 URGENCIAS 24hs
+      </a>
+      <audio id="Cazafantasmas-audio" src="Cazafantasmas.mp3" preload="auto"></audio>
+      <script>
+         function reproducirCazafantasmas() {
+           const audio = document.getElementById("Cazafantasmas-audio");
+           audio.currentTime = 0; // Reinicia el audio al principio
+           audio.play().catch(e => console.log("Error reproduciendo audio:", e));
+         
+           // Después de 3.5 segundos, empezamos a bajar el volumen durante 1.5 segundos (fade out)
+           setTimeout(() => {
+             let fadeOutInterval = setInterval(() => {
+               if (audio.volume > 0.05) {
+                 audio.volume = Math.max(0, audio.volume - 0.05); // baja volumen poco a poco
+               } else {
+                 clearInterval(fadeOutInterval);
+                 audio.pause();
+                 audio.currentTime = 0;
+                 audio.volume = 1; // restauramos volumen para la próxima reproducción
+               }
+             }, 75); // cada 75ms baja un poco el volumen
+           }, 15000); // espera 5s antes de iniciar el fade out
+         }
+      </script>
+   </body>
