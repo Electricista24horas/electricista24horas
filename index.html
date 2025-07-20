@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="canonical" href="https://electricista24horas.com.ar/" />
+  <title>Electricista 24hs en CABA y GBA | Urgencias Eléctricas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- SEO y redes sociales -->
+  <meta name="description" content="Electricista matriculado 24 horas en CABA y Gran Buenos Aires. Urgencias eléctricas con atención rápida. Llame ahora.">
+  <meta property="og:title" content="Electricista Matriculado 24hs">
+  <meta property="og:description" content="Servicio eléctrico urgente en Capital y Gran Buenos Aires. Matriculado COPIME y CTPBA.">
+  <meta property="og:url" content="https://electricista24horas.com.ar">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://electricista24horas.com.ar/logo_resized.jpg">
+  <link rel="apple-touch-icon" sizes="512x512" href="icono512.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Electricista Matriculado 24hs",
+  "image": "https://electricista24horas.com.ar/logo_resized.jpg",
+  "description": "Electricista matriculado 24 horas en CABA y Gran Buenos Aires. Urgencias eléctricas a domicilio, atención inmediata.",
+  "url": "https://electricista24horas.com.ar",
+  "telephone": "+541159156129",
+  "email": "contacto@electricista24horas.com.ar",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "CABA y GBA",
+    "addressLocality": "Ciudad Autónoma de Buenos Aires",
+    "addressRegion": "CABA y Gran Buenos Aires",
+    "postalCode": "1184",
+    "addressCountry": "AR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -34.6037,
+    "longitude": -58.3816
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "paymentAccepted": "Cash, Credit Card, Debit Card, Mercado Pago, Transfer",
+  "priceRange": "$$",
+  "sameAs": [
+    "https://www.facebook.com/electricidadled/",
+    "https://www.instagram.com/electricistamatriculado24hs/",
+    "https://www.linkedin.com/in/luciano-didiego-417917152/"
+  ]
+}
+</script>
+
+  <style>
+
+    body {
+      background: linear-gradient(to bottom, #000000, #1a1a1a);
+      color: yellow;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1300px;
+      margin: 0px;
+      padding: 20px;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 5;
+    }
+    .caja-central {
+      border: 4px solid yellow;
+      background-color: black;
+      padding: 25px;
+      border-radius: 12px;
+      max-width: 585px;
+      margin-top: 10px;
+      z-index: 2;
+      position: relative;
+      width: 100%;
+      box-sizing: border-box;
+    }
+          h1 {
+      font-size: 70px;
+      font-weight: bold;
+      margin: 0 0 20px 0;
+    }
+    .matriculado { font-size: 48px; margin: 0; }
+    .info { font-size: 38px; line-height: 1.4; }
+    .info.todos { font-size: 34px; }
+    .contact { font-size: 28px; line-height: 1.4; }
+    .name { font-size: 44px; font-weight: bold; }
+    .phone {
+      font-size: 44px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin: 10px 0;
+    }
+    .phone a {
+      color: yellow;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .phone a:hover {
+      text-decoration: underline;
+    }
+    .whatsapp-icon {
+      width: 50px;
+      height: 50px;
+      background-color: #25D366;
+      border-radius: 0%;
+      padding: 5px;
+      box-shadow: 0 0 10px #25D366;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: pulse 2s infinite ease-in-out;
+    }
+         .whatsapp-icon:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 25px #1ebe5d;
+      animation-play-state: paused;
+    }
+    /* Botón WhatsApp escritorio */
+#whatsapp-desktop {
+  position: absolute;
+  top: 500px; /* Ajusta según dónde lo quieras */
+  left: 400px; /* Ajusta según tu diseño */
+  z-index: 9999;
+  display: block; /* Se muestra por defecto en escritorio */
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 0 10px #25D366;
+}
+
+/* Botón WhatsApp superpuesto para celular */
+.whatsapp-superpuesto {
+  display: none; /* Oculto por defecto */
+}
+
+/* Solo mostrar el botón superpuesto en celulares */
+@media screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden !important; /* Evita scroll horizontal */
+  }
+  
+  #whatsapp-desktop {
+    display: none !important; /* Oculta botón escritorio en móvil */
+  }
+
+  .whatsapp-superpuesto {
+    display: block !important; /* Muestra botón celular */
+  }
+}
+
+/* Animación de titilar */
+.titilar-icono {
+  animation: titilar 1s infinite;
+}
+
+@keyframes titilar {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+@media (max-width: 767px) {
+  .whatsapp-superpuesto {
+    display: block;
+  }
+}
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px #25D366;
+      }
+      50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px #25D366;
+      }
+    }
+    .email { font-size: 26px; word-break: break-word; }
+    #copime-img, #logo-izquierdo {
+      position: absolute;
+      width: 328px;
+      max-width: 45vw;
+      height: auto;
+      border: 2px solid yellow;
+      border-radius: 8px;
+      background-color: black;
+      padding: 6px;
+      box-shadow: 0 0 10px yellow;
+      z-index: 10;
+      transition: top 0.2s ease;
+    }
+    #logo-izquierdo {
+      top: 10px;
+      left: 20px;
+      right: auto;
+    }
+    .review {
+      background-color: #111;
+      border: 1px solid #444;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .review-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .caja-servicios {
+      display: inline-block;
+      border: 4px solid black;
+      background-color: yellow;
+      padding: 15px 25px;
+      border-radius: 12px;
+      max-width: 600px;
+      margin-top: 40px;
+      color: black;
+      text-align: left;
+      font-size: 32px;
+      box-sizing: border-box;
+      z-index: 1;
+      position: relative;
+    }
+    .caja-servicios ul {
+      padding-left: 20px;
+      margin: 0;
+      list-style: none;
+    }
+    .caja-servicios li {
+      position: relative;
+      margin-bottom: 15px;
+      padding-left: 50px;
+      font-weight: 600;
+    }
+         .viñeta1::before,
+    .viñeta2::before,
+    .viñeta3::before,
+    .viñeta4::before,
+    .viñeta5::before {
+      content: "•";
+      position: absolute;
+      left: -0;
+      font-size: 60px;
+      color: black;
+      animation: bulletPulse 2s infinite ease-in-out;
+      top: -29px;
+    }
+    @keyframes bulletPulse {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+        text-shadow: 0 0 5px black;
+      }
+      50% {
+        transform: scale(1.3);
+        opacity: 0.7;
+        text-shadow: 0 0 15px black;
+      }
+    }
+         /* Contenedor flex para centrar y separar botones */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    /* Estilo base para todos los botones */
+    .social-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: 160px;
+      height: 45px;
+      padding: 0 12px;
+      border-radius: 10px;
+      background-color: #f0f0f0;
+      color: #000;
+      font-weight: 600;
+      font-size: 16px;
+      text-decoration: none;
+      box-sizing: border-box;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    /* Tamaño de los íconos */
+    .social-button img {
+      width: 24px;
+      height: 24px;
+      display: block;
+    }
+    /* Efecto hover */
+    .social-button:hover {
+      background-color: yellow;
+      color: black;
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+    /* Ajustes específicos por red */
+    .social-button[title="Facebook"] { font-size: 18px; }
+    .social-button[title="Instagram"] { font-size: 18px; }
+    .social-button[title="WhatsApp"] { font-size: 18px; }
+    .social-button[title="LinkedIn"] { font-size: 18px; }
+    .social-button img {
+      width: 50px;
+      height: 40px;
+    }
+    #contador {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #ccc;
+    }
+    /* Imágenes movibles */
+    .img-movable {
+      position: absolute;
+      width: 300px;
+      border: 3px solid yellow;
+      border-radius: 10px;
+      cursor: grab;
+      z-index: 1000;
+      transition: top 0.2s ease;
+    }
+    .img-movable.izquierda1 {
+      top: 100px;
+      left: 10px;
+    }
+    .img-movable.izquierda2 {
+      top: 350px;
+      left: 10px;
+    }
+    #copime-img {
+      right: 20px;
+      top: 10px;
+      width: 365px;
+      max-width: 45vw;
+      height: auto;
+      border: 2px solid yellow;
+      border-radius: 8px;
+      background-color: black;
+      padding: 6px;
+      box-shadow: 0 0 10px yellow;
+      z-index: 10;
+    }
+         /* Ajusto la imagen derecha movible "jeta" */
+         .img-movable.derecha1 {
+         top: 360px; /* lo subí de 200px a 360px para que quede debajo de Copime y no se solape */
+         right: 10px;
+         width: 300px;
+         border: 3px solid yellow;
+         border-radius: 10px;
+         cursor: grab;
+         z-index: 1000;
+         }
+         @media (max-width: 600px) {
+         h1 { font-size: 46px; }
+         .matriculado { font-size: 32px; }
+         .info { font-size: 22px; }
+         .contact { font-size: 20px; }
+         .name, .phone { font-size: 26px; }
+         .email { font-size: 16px; }
+         #copime-img, #logo-izquierdo {
+         position: static;
+         max-width: 200px;
+         margin: 20px auto;
+         display: block;
+         }
+         /* Ajuste para imágenes movibles */
+         .img-movable {
+         position: static;
+         width: 100%;
+         max-width: 300px;
+         margin: 10px auto;
+         display: block;
+         }
+         }
+         @media (max-width: 768px) {
+         .container {
+         flex-direction: column;
+         padding: 10px;
+         }
+         img {
+         width: 100%;
+         height: auto;
+         position: static;
+         }
+         #copime-img,
+         #logo-izquierdo,
+         #edenor-img,
+         #edesur-img,
+         #pagocontarjeta-img,
+         #texto-derecha {
+         position: static !important;
+         width: 100% !important;
+         max-width: 300px;
+         margin: 10px auto;
+         display: block;
+         top: auto !important;
+         left: auto !important;
+         right: auto !important;
+         }
+         .img-movable {
+         position: static;
+         width: 100%;
+         max-width: 300px;
+         margin: 10px auto;
+         display: block;
+         }
+         h1 { font-size: 40px; }
+         .matriculado { font-size: 28px; }
+         .info, .info.todos { font-size: 20px; }
+         .contact { font-size: 18px; }
+         .name, .phone { font-size: 22px; }
+         .email { font-size: 16px; }
+         #texto-derecha { font-size: 20px; }
+         }
+
+          #edenor-img {
+      position: absolute;
+      top: 700px;
+      left: 30px;
+      width: 390px;
+      height: auto;
+      border: 3px solid yellow;
+      border-radius: 10px;
+      background-color: black;
+      padding: 6px;
+      box-shadow: 0 0 10px yellow;
+      z-index: 100;
+    }
+    #edesur-img {
+      position: absolute;
+      top: 870px;
+      left: 30px;
+      width: 390px;
+      height: auto;
+      border: 3px solid yellow;
+      border-radius: 10px;
+      background-color: black;
+      padding: 6px;
+      box-shadow: 0 0 10px yellow;
+      z-index: 100;
+    }
+    #pagocontarjeta-img {
+  position: absolute;
+  top: 850px; /* Subido para que no se encime */
+  left: 950px;
+  width: 300px;
+  height: auto;
+  border: 3px solid yellow;
+  border-radius: 10px;
+  background-color: black;
+  padding: 6px;
+  box-shadow: 0 0 10px yellow;
+  z-index: 100;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+    /* Texto nuevo arriba de la imagen Pago con tarjeta */
+         #texto-derecha {
+         position: absolute;
+         top: 660px;
+         left: 910px;
+         z-index: 150;
+         width: 400px;
+         box-sizing: border-box;
+         background-color: black;
+         color: yellow;
+         font-size: 26px;
+         font-weight: bold;
+         padding: 10px;
+         border: 2px solid yellow;
+         border-radius: 8px;
+         text-align: center;
+         animation: titilar 0.5s infinite; /* <- agregado */
+         }
+         
+    .boton-emergencia {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: red;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      text-decoration: none;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      z-index: 9999;
+      animation: parpadeo 1s infinite;
+      transition: transform 0.2s ease;
+    }
+         .boton-emergencia:hover {
+      transform: scale(1.05);
+    }
+    @keyframes parpadeo {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
+    }
+    /* Media query para pantallas pequeñas (celulares) */
+    @media (max-width: 480px) {
+      #edenor-img,
+      #edesur-img,
+      #pagocontarjeta-img {
+        width: 300px !important;
+        height: auto !important;
+        position: static !important;
+        margin: 10px auto !important;
+        display: block !important;
+      }
+         .caja-central,
+      .caja-servicios,
+      #texto-derecha {
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+        position: static !important;
+      }
+    /* Ajustes para logos */     
+    html body .container 
+    #logo-izquierdo {
+    position: absolute !important;
+    top: 50px !important;   /* Cambiá este valor para mover verticalmente */
+    left: 20px !important;  /* Cambiá este valor para mover horizontalmente */
+    width: 120px !important;
+    height: auto !important;
+    z-index: 1000 !important;
+    margin: 0 !important;
+    display: block !important;
+  }
+
+    /* Corrección específica para #copime-img */
+    html body .container #copime-img {
+      position: static !important;
+      width: 80px !important;
+      height: auto !important;
+      display: block !important;
+      margin: 10px auto !important;
+    }
+
+    /* Para que el body no haga scroll horizontal */
+    body {
+      overflow-x: hidden;
+    }
+
+    .boton-titilando {
+      animation: titilar 1s infinite;
+    }
+}
+
+  .seo-texto-oculto {
+  position: absolute !important;
+  left: -9999px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .whatsapp-escritorio {
+    display: none !important;
+  }
+
+  /* Agregar para asegurar centrado */
+  @media screen and (max-width: 767px) {
+  .redes-sociales {
+  background-color: transparent !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.redes-sociales:empty {
+  display: none;
+}
+
+#footer {
+  background-color: transparent !important;
+  margin: 0 !important;
+  padding: 10px 0 !important;
+  border: none !important;
+  color: #666;
+}
+
+footer a {
+  display: inline;
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: normal !important;
+  text-decoration: underline !important;
+  color: #0077cc !important;
+  cursor: pointer !important;
+}
+
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+footer div {
+  margin: 3px 0;
+}
+
+  .defensa-consumidor,
+.creador,
+.electricidadled-email,
+.copyright {
+  text-align: center;
+  margin: 3px 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+  /* Centrar copyright también */
+  .copyright {
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+    margin-top: 5px !important;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- A partir de acá todo está perfecto -->
+<!-- BLOQUE SEO OCULTO COMPLETO -->
+<div class="seo-texto-oculto">
+  <h1>Electricista Matriculado 24hs en CABA y Gran Buenos Aires</h1>
+  <p>Para conocer el detalle de todos nuestros servicios eléctricos, podés <a href="/servicios.html">ver todos nuestros servicios</a>.</p>
+  <p>También te invitamos a <a href="/instalar.html">conocer nuestra App de Emergencias Eléctricas</a> o <a href="#boton-urgencias">solicitar presupuesto urgente</a>.</p>
+  <p>Urgencias eléctricas a domicilio, atención inmediata</p>
+  <p>Matriculado COPIME y CTPBA, legal y habilitado</p>
+  <p>Electricista 24 horas en Capital y Provincia. Atendemos urgencias eléctricas los 365 días del año.</p>  
+  <p>Servicio eléctrico urgente en Palermo, Almagro, Recoleta, Villa Urquiza, Belgrano, Caballito, San Cristóbal, Boedo y Microcentro.</p>  
+  <p>Electricista habilitado en San Martín, Caseros, Ballester, Vicente López, Florida, Olivos, Munro, Tigre, San Fernando y San Isidro.</p>  
+  <p>Zona sur: Avellaneda, Lanús, Banfield, Lomas de Zamora, Quilmes, Temperley, Monte Grande y Ezeiza.</p>  
+  <p>Zona oeste: Morón, Ituzaingó, Merlo, Castelar, Ramos Mejía, Haedo y Hurlingham.</p>  
+  <p>Atención inmediata en consorcios, casas, PH, locales comerciales, oficinas y galpones industriales.</p>  
+  <p>Matriculado COPIME M.N. R003541 y CTPBA M.P. RIE-1-52559.</p>  
+  <p>Instalaciones nuevas, renovación de cableado, tableros eléctricos, disyuntores, térmicas, puesta a tierra, tomas, llaves, luminarias.</p>  
+  <p>Firma de planos eléctricos, boletos Edenor y Edesur, certificados de habilitación.</p>
+  <p>Cortocircuitos, disyuntores que saltan, baja tensión, corte de luz parcial o total, humedad en cajas, medidores con fallas.</p>  
+  <p>Electricista confiable y económico, atención profesional con herramientas adecuadas.</p>  
+  <p>Financiamos obras eléctricas. Presupuestos sin cargo.</p>  
+  <p>Pagos con tarjeta de crédito, débito, Mercado Pago, transferencia o efectivo.</p> 
+  <p>Instalaciones legales bajo normas AEA, IRAM, COPIME, CTPBA, Edesur y Edenor.</p>  
+  <p>Soluciones eléctricas en el acto. Urgencias reales. Sin vueltas.</p>  
+  <p>Luz trifásica, tableros nuevos, disyuntores separados, líneas para aires, termotanques, hornos y estufas.</p>  
+  <p>Electricista urgente con posnet, técnico para comercios habilitados.</p>  
+  <p>Electricista profesional, seguro, honesto y con experiencia.</p>  
+  <p>Electricista 24hs con atención personalizada.</p>
+
+  <!-- FAQ OCULTA PARA SEO -->
+  <div class="faq">
+    <h2>Preguntas frecuentes sobre servicios eléctricos</h2>
+
+    <h3>¿Atienden urgencias eléctricas los fines de semana?</h3>
+    <p>Sí, brindamos servicio eléctrico 24 horas todos los días, incluso fines de semana y feriados.</p>
+
+    <h3>¿Pueden hacer trabajos con factura?</h3>
+    <p>Sí, emitimos factura A o B. Somos electricistas matriculados COPIME y CTPBA.</p>
+
+    <h3>¿Qué zonas atienden con urgencia?</h3>
+    <p>Trabajamos en todo CABA y Gran Buenos Aires: norte, sur, oeste y zona céntrica.</p>
+
+    <h3>¿Cuánto cuesta una reparación eléctrica de urgencia?</h3>
+    <p>El costo depende del horario, la urgencia y la zona. Damos presupuesto sin cargo antes de comenzar.</p>
+
+    <h3>¿Puedo pagar con tarjeta o Mercado Pago?</h3>
+    <p>Sí. Aceptamos tarjetas de crédito, débito, Mercado Pago, transferencia y efectivo.</p>
+  </div>
+</div>
+         
+<div class="caja-central" style="position: relative; padding: 0; border: none; background: none; margin-bottom: -20px;">
+  <!-- Botón de WhatsApp solo para CELULAR -->
+  <div class="whatsapp-superpuesto" style="position: absolute; top: 345px; left: 10px; z-index: 2;">
+    <a href="https://wa.me/5491159156129?text=Hola%20Luciano,%20necesito%20un%20electricista"
+       target="_blank"
+       title="WhatsApp"
+       style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: 10px; color: yellow; text-decoration: none; font-size: 24px; font-weight: bold;">
+      
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+           alt="WhatsApp"
+           class="titilar-icono"
+           style="width: 40px; height: 45px;" />
+    </a>
+  </div>
+</div>
+
+  <!-- Imagen ocupando el ancho, con menos espacio debajo -->
+  <img 
+    src="electricista.png"
+    alt="Encabezado visual"
+    style="width: 100%; max-width: 510px; border-radius: 12px; border: 2px solid yellow;"
+  />
+</div>
+
+         <!-- 2. Imágenes de CTPBA y COPIME (lado a lado) -->
+    <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 20px;">
+      <img src="ctpba.jpg" alt="Logo CTPBA, Colegio de Tecnicos de la Provincia de Buenos Aires" id="logo-izquierdo">
+      <img src="copime.jpg" alt="COPIME, Consejo Profesional de Ingenieria Mecanica de Electricistas" id="copime-img" />
+    </div>
+    
+         <!-- 3. Recuadro central inferior con texto -->
+       <img src="trabajos.png" id="trabajos-img" alt="Solicitud de Nuevo Medidor Monofásico/Trifásico, Certificado DCI, Armado de Pilar, Tramites Edenor/Edesur, Certificado Medicion Puesta a Tierra Res. SRT 900/2015" style="width: 100%; max-width: 400px; display: block; margin: 20px auto;">         
+         
+               <!-- 4. Imagen de Edenor -->
+    <img src="edenor.jpg" id="edenor-img" alt="Logo de Edenor">
+
+    <!-- 5. Imagen de Edesur -->
+    <img src="edesur.jpg" id="edesur-img" alt="Logo Edesur" />
+
+    <!-- 6. Texto titilando "Financiamos tus obras" -->
+    <div id="texto-derecha">¡¡¡FINANCIAMOS TUS OBRAS!!!<br> Consultas y llamadas por WhatsApp.</div>
+
+    <!-- 7. Imagen de Pago con tarjeta con acción de mostrar datos -->
+<!-- Imagen de Pago con tarjeta con acción -->
+<!-- Imagen de Pago con tarjeta (ya no es arrastrable) -->
+<img 
+  src="pago-con-tarjeta.jpg" 
+  alt="Pago con tarjeta, Mercado Pago, Visa, Mastecard, Banelco, Link, Transferencia" 
+  id="pagocontarjeta-img" 
+  draggable="false"
+  style="cursor: pointer; max-width: 300px;"
+  onclick="toggleDatosPago()"
+/>
+
+ <!-- Botón de reseñas con estrellas amarillas -->
+<div id="boton-resenas" style="display: flex; justify-content: center; margin: 20px auto; max-width: 450px;">
+  <a href="https://g.page/r/CdYlXUO71w5CEBM/review" target="_blank" style="
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #070300; /* Amarillo suave */
+    color: #fdfcfc;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px;
+    box-shadow: 0 4px 8px rgba(247, 243, 4, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+  "
+  onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 12px rgba(255, 215, 0, 0.6)';"
+  onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(255, 215, 0, 0.3)';"
+  >
+    <!-- Contenedor de estrellas -->
+    <div style="display: flex; gap: 3px;">
+      <svg width="30" height="30" fill="#FFD700" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg width="30" height="30" fill="#FFD700" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg width="30" height="30" fill="#FFD700" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg width="30" height="30" fill="#FFD700" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg width="30" height="30" fill="#FFD700" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+    </div>
+
+    <span>Dejanos tu opiñon</span>
+  </a>
+</div>
+
+<style>
+  @keyframes titilar-fondo {
+  0%, 100% { opacity: 9; }
+  50% { opacity: 0; }
+}
+
+#boton-app {
+  width: 150px;
+  height: 150px;
+  background: url('icono512.png') no-repeat center center;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px;
+  box-sizing: border-box;
+  color: rgb(252, 3, 3);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.1;
+  text-shadow: 1px 1px 2px black;
+  animation: titilar-fondo 2s infinite;
+  z-index: 9999;
+}
+
+/* 💻 ESTILO SOLO PARA PC */
+@media screen and (min-width: 768px) {
+  #boton-app {
+    position: absolute;
+    bottom: 150px;
+    left: 110px;
+  }
+}
+
+/* 📱 ESTILO SOLO PARA CELULAR */
+@media screen and (max-width: 767px) {
+  #boton-app {
+    position: static;
+    margin: 30px auto;
+  }
+  @media screen and (max-width: 600px) {
+  #boton-urgencia {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+  }
+
+  footer:hover ~ #boton-urgencia,
+  .pie-final:hover ~ #boton-urgencia {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #pie-final {
+    position: relative;
+    z-index: 10;
+  
+}
+</style>
+
+<a href="instalar.html" id="boton-app" title="App de Emergencia Eléctrica">
+  <span>APP<br>Emergencia<br>Eléctrica<br>24hs</span>
+</a>
+
+<!-- Redes sociales -->
+<div id="sociales" class="social-links" role="contentinfo">
+  <a href="https://www.facebook.com/electricidadled/" target="_blank" class="social-button" title="Facebook">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook logo" />
+    Facebook
+  </a>
+  <a href="https://www.instagram.com/electricistamatriculado24hs/" target="_blank" class="social-button" title="Instagram">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram logo" />
+    Instagram
+  </a>
+  <div id="whatsapp-movable" style="position: absolute; top: 200px; left: 50px; z-index: 9999; cursor: grab;"></div>
+  <a href="https://wa.me/5491159156129" target="_blank" class="social-button" title="WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp logo" />
+    WhatsApp
+  </a>
+  <a href="https://www.linkedin.com/in/luciano-didiego-417917152/" target="_blank" class="social-button" title="LinkedIn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn logo" />
+    LinkedIn
+  </a>
+
+</div>
+
+<div id="contador" aria-live="polite"></div>
+
+<!-- Script para imágenes arrastrables -->
+<script>
+
+const movableImages = document.querySelectorAll('.img-movable');
+
+  let currentDrag = null;
+  let offsetX = 0;
+  let offsetY = 0;
+
+  movableImages.forEach(img => {
+    if (!img) return; // Por si alguna no está cargada
+    img.style.position = 'absolute';
+
+    img.addEventListener('mousedown', (e) => {
+      currentDrag = img;
+      offsetX = e.clientX - img.getBoundingClientRect().left;
+      offsetY = e.clientY - img.getBoundingClientRect().top;
+      img.style.cursor = 'grabbing';
+      e.preventDefault();
+    });
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (currentDrag) {
+      let left = e.clientX - offsetX;
+      let top = e.clientY - offsetY;
+
+      const maxLeft = window.innerWidth - currentDrag.offsetWidth;
+      const maxTop = window.innerHeight - currentDrag.offsetHeight;
+      if (left < 0) left = 0;
+      if (top < 0) top = 0;
+      if (left > maxLeft) left = maxLeft;
+      if (top > maxTop) top = maxTop;
+
+      currentDrag.style.left = left + 'px';
+      currentDrag.style.top = top + 'px';
+    }
+  });
+
+  document.addEventListener('mouseup', () => {
+    if (currentDrag) {
+      currentDrag.style.cursor = 'grab';
+      currentDrag = null;
+    }
+  });
+
+  // Función para mostrar/ocultar los datos de transferencia
+  function toggleDatosPago() {
+    const contenedor = document.getElementById('datos-pago');
+    contenedor.style.display = (contenedor.style.display === 'none') ? 'block' : 'none';
+  }
+</script>
+
+     <!-- Botón de urgencias fijo centrado abajo -->
+<div id="boton-urgencias-container" style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 9999; text-align: center;">
+  <button id="boton-urgencias" style="background-color: red; color: white; font-weight: bold; font-size: 20px; border: none; border-radius: 12px; padding: 12px 20px; cursor: pointer;">
+    🚨 URGENCIAS 24hs
+  </button>
+  <div id="opciones-urgencias" style="display: none; margin-top: 10px;">
+    <a href="tel:+541159156129" id="llamar-btn" style="display: block; background: #222; color: white; padding: 10px; border-radius: 10px; margin-bottom: 6px; text-decoration: none;">
+      📞 Llamar a Luciano
+    </a>
+    <a href="https://wa.me/5491159156129?text=Hola%20Luciano,%20tengo%20una%20urgencia%20eléctrica" target="_blank" id="whatsapp-btn" style="display: block; background: #25D366; color: white; padding: 10px; border-radius: 10px; text-decoration: none;">
+      💬 WhatsApp a Luciano
+    </a>
+  </div>
+</div>
+
+<!-- Audio cazafantasmas -->
+<audio id="audio-cazafantasmas" preload="auto" loop>
+  <source src="cazafantasmas.mp3" type="audio/mpeg" />
+  Tu navegador no soporta audio.
+</audio>
+
+<script>
+  const botonUrgencias = document.getElementById('boton-urgencias');
+  const opcionesUrgencias = document.getElementById('opciones-urgencias');
+  const audiocazafantasmas = document.getElementById('audio-cazafantasmas');
+
+  botonUrgencias.addEventListener('click', () => {
+    if (opcionesUrgencias.style.display === 'none' || opcionesUrgencias.style.display === '') {
+      opcionesUrgencias.style.display = 'block';
+      audiocazafantasmas.play().catch(() => {
+        // Algunos navegadores bloquean autoplay, pedir interacción
+        console.log('Audio bloqueo por autoplay');
+      });
+    } else {
+      opcionesUrgencias.style.display = 'none';
+      audiocazafantasmas.pause();
+      audiocazafantasmas.currentTime = 0;
+    }
+  });
+
+  document.getElementById('llamar-btn').addEventListener('click', () => {
+    audiocazafantasmas.pause();
+    audiocazafantasmas.currentTime = 0;
+    opcionesUrgencias.style.display = 'none';
+  });
+
+  document.getElementById('whatsapp-btn').addEventListener('click', () => {
+    audiocazafantasmas.pause();
+    audiocazafantasmas.currentTime = 0;
+    opcionesUrgencias.style.display = 'none';
+  });
+</script>
+
+  <!-- Últimos elementos de tu página -->
+
+  <!-- BOTÓN DE WHATSAPP DESKTOP FLOTANTE Y MÓVIL -->
+<a href="https://wa.me/5491159156129?text=Hola%20Luciano,%20necesito%20un%20electricista"
+   target="_blank"
+   id="whatsapp-desktop"
+   title="WhatsApp"
+   style="
+     position: absolute;
+     top: 510px;
+     left: 405px;
+     width: 50px;
+     height: 50px;
+     background-color: #25D366;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: grab;
+     z-index: 99999;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+     resize: both;
+     overflow: hidden;
+     border: 2px solid #128C7E;
+   ">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+       alt="WhatsApp" 
+       style="width: 70%; height: 70%;" />
+</a>
+
+<style>
+  #whatsapp-desktop {
+    display: none;
+    animation: titilar 2s infinite;
+  }
+  @media screen and (min-width: 768px) {
+    #whatsapp-desktop {
+      display: flex;
+    }
+  }
+  @keyframes titilar {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.1; }
+  }
+</style>
+
+<!-- SCRIPT PARA DRAG DEL BOTÓN WHATSAPP -->
+<script>
+(function() {
+  const btn = document.getElementById('whatsapp-desktop');
+  let isDragging = false;
+  let dragStartX = 0;
+  let dragStartY = 0;
+  let btnStartLeft = 0;
+  let btnStartTop = 0;
+
+  btn.addEventListener('mousedown', e => {
+    if (e.target === btn) {
+      isDragging = true;
+      dragStartX = e.clientX;
+      dragStartY = e.clientY;
+      const rect = btn.getBoundingClientRect();
+      btnStartLeft = rect.left + window.scrollX;
+      btnStartTop = rect.top + window.scrollY;
+      btn.style.cursor = 'grabbing';
+      e.preventDefault();
+    }
+  });
+
+  window.addEventListener('mousemove', e => {
+    if (!isDragging) return;
+    let newLeft = btnStartLeft + (e.clientX - dragStartX);
+    let newTop = btnStartTop + (e.clientY - dragStartY);
+
+    const maxLeft = window.scrollX + window.innerWidth - btn.offsetWidth;
+    const maxTop = window.scrollY + window.innerHeight - btn.offsetHeight;
+    if (newLeft < window.scrollX) newLeft = window.scrollX;
+    if (newTop < window.scrollY) newTop = window.scrollY;
+    if (newLeft > maxLeft) newLeft = maxLeft;
+    if (newTop > maxTop) newTop = maxTop;
+
+    btn.style.left = newLeft + 'px';
+    btn.style.top = newTop + 'px';
+  });
+
+  window.addEventListener('mouseup', () => {
+    if (isDragging) {
+      isDragging = false;
+      btn.style.cursor = 'grab';
+    }
+  });
+})();
+</script>
+
+<!-- SCRIPT PARA OCULTAR BOTÓN DE URGENCIAS CUANDO SE SOLAPA -->
+<script>
+  function esSolapado(elemento1, elemento2) {
+    const r1 = elemento1.getBoundingClientRect();
+    const r2 = elemento2.getBoundingClientRect();
+    return !(r1.right < r2.left || 
+             r1.left > r2.right || 
+             r1.bottom < r2.top || 
+             r1.top > r2.bottom);
+  }
+
+  window.addEventListener('scroll', function() {
+    const botonContainer = document.getElementById('boton-urgencias-container');
+    const sociales = document.getElementById('sociales');
+    const footer = document.getElementById('footer') || document.querySelector('footer');
+
+    if (!botonContainer || !sociales || !footer) return;
+
+    // Si el botón se solapa con redes sociales o con el footer, ocultarlo
+    if (esSolapado(botonContainer, sociales) || esSolapado(botonContainer, footer)) {
+      botonContainer.style.opacity = '0';
+      botonContainer.style.pointerEvents = 'none';
+    } else {
+      botonContainer.style.opacity = '1';
+      botonContainer.style.pointerEvents = 'auto';
+    }
+  });
+</script>
+
+  <!-- Espacio para que el botón flotante no tape el footer -->
+<div style="height: 1px;"></div>
+
+<!-- FOOTER FINAL -->
+<footer id="footer" style="background: none; padding: 10px 0; text-align: center; color: #666;">
+  <div style="margin: 10px 0; font-size: 2em;">
+    <small>
+      <a href="mailto:electricidadled2025@gmail.com" style="color: inherit; text-decoration: none;">
+        electricidadled2025@gmail.com
+      </a>
+    </small>
+  </div>
+
+  <p style="text-align: center; margin: 10px 0; font-size: 1.5em; line-height: 1.2;">
+  <a href="https://www.argentina.gob.ar/economia/industria-y-comercio/defensadelconsumidor"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="color: #0077cc; text-decoration: underline; cursor: pointer; display: inline-block; padding: 5px 10px;">
+    Defensa del Consumidor
+  </a>
+</p>
+<footer id="pie-final">
+  <!-- acá tus redes sociales, textos y links -->
+</footer>
+
+  <div style="margin: 10px 0; font-size: 0.9em;">
+    <small>Copyright © 2025. Todos los derechos reservados.</small>
+  </div>
+</footer>
+
+<script>
+
+  window.addEventListener("scroll", function () {
+    let posicionActual = window.scrollY;
+
+    if (posicionActual > ultimaPosicion && posicionActual > document.body.scrollHeight - window.innerHeight - 2000) {
+      // Ocultar cuando baja y está cerca del pie de página
+      botonUrgencias.style.display = "none";
+    } else {
+      // Mostrar cuando sube
+      botonUrgencias.style.display = "block";
+    }
+
+    ultimaPosicion = posicionActual;
+  });
+</script>
+
+</body>
+</html>
