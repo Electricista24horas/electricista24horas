@@ -1,0 +1,21 @@
+{
+  "name": "Electricista 24hs en CABA y GBA",
+  "short_name": "Electricista24hs",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#FFD700",
+  "description": "Electricista matriculado 24 horas en CABA y Gran Buenos Aires. Urgencias eléctricas con atención rápida.",
+  "icons": [
+    {
+      "src": "/icono512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
