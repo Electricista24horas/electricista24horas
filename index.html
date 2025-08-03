@@ -803,7 +803,7 @@ footer div {
 
 <style>
   @keyframes titilar-fondo {
-  0%, 100% { opacity: 9; }
+  0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
 
@@ -845,6 +845,8 @@ footer div {
     position: static;
     margin: 30px auto;
   }
+  }
+
   @media screen and (max-width: 600px) {
   #boton-urgencia {
     position: fixed;
@@ -865,6 +867,7 @@ footer div {
     position: relative;
     z-index: 10;
   
+}
 }
 </style>
 
@@ -1146,9 +1149,9 @@ const movableImages = document.querySelectorAll('.img-movable');
     Defensa del Consumidor
   </a>
 </p>
-<footer id="pie-final">
+<div id="pie-final">
   <!-- acá tus redes sociales, textos y links -->
-</footer>
+</div>
 
   <div style="margin: 10px 0; font-size: 0.9em;">
     <small>Copyright © 2025. Todos los derechos reservados.</small>
@@ -1157,6 +1160,7 @@ const movableImages = document.querySelectorAll('.img-movable');
 
 <script>
 
+  let ultimaPosicion = posicionActual;
   window.addEventListener("scroll", function () {
     let posicionActual = window.scrollY;
 
@@ -1168,7 +1172,6 @@ const movableImages = document.querySelectorAll('.img-movable');
       botonUrgencias.style.display = "block";
     }
 
-    ultimaPosicion = posicionActual;
   });
 </script>
 
@@ -1212,6 +1215,18 @@ const movableImages = document.querySelectorAll('.img-movable');
     });
   }
 </script>
+<div class="seo-links" style="display:none;">
+<a href="/servicio-eléctrico-de-emergencia-24/7.html">Servicio eléctrico de emergencia 24/7</a>
+<a href="/electricista-urgente-a-domicilio---24-horas.html">Electricista urgente a domicilio - 24 horas</a>
+<a href="/electricista-24-horas-en-CABA-y-Gran-BS-AS.html">Electricista 24 horas en CABA y Gran BS AS</a>
+<a href="/electricista-urgente-24hs-para-cortes-de-luz-y-fallas-eléctricas.html">Electricista urgente 24hs para cortes de luz y fallas eléctricas</a>
+<a href="/electricista-profesional-24/7---Garantía-y-precio-justo.html">Electricista profesional 24/7 - Garantía y precio justo</a>
+<a href="/¿Corte-de-luz?-Electricista-24hs-al-rescate.html">¿Corte de luz? Electricista 24hs al rescate</a>
+<a href="/electricista-24hs-con-experiencia-y-garantía.html">Electricista 24hs con experiencia y garantía</a>
+<a href="/electricista-matriculado-24-horas-para-tu-seguridad.html">Electricista matriculado 24 horas para tu seguridad</a>
+<a href="/electricista-disponible-día-y-noche-para-tu-hogar-o-negocio.html">Electricista disponible día y noche para tu hogar o negocio</a>
+<a href="/electricista-urgente-24-horas-en-tu-barrio.html">Electricista urgente 24 horas en tu barrio</a>
+</div>
 
 </body>
 </html>
