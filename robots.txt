@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
-
+Allow: /
 Sitemap: https://electricista24horas.com.ar/sitemap.xml
+
