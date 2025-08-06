@@ -26,6 +26,14 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
+      # 👇 Paso de compatibilidad para forzar v4 y evitar el error
+      - name: Dummy upload to force v4
+        uses: actions/upload-artifact@v4
+        with:
+          name: dummy
+          path: ./README.md
+          retention-days: 1
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
