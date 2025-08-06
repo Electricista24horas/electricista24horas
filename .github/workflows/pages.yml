@@ -29,7 +29,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: "."  # Cambiá esto si tu sitio está en otra carpeta
+          path: "."  # Cambiá si tu sitio está en otra carpeta
 
       - name: Deploy to GitHub Pages
         id: deployment
