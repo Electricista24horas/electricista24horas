@@ -1,44 +1,30 @@
-name: Deploy to GitHub Pages
+name: Deploy to gh-pages branch
 
 on:
   push:
     branches: [main]
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+  contents: write
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-
-      # 👇 Paso de compatibilidad para forzar v4 y evitar el error
-      - name: Dummy upload to force v4
-        uses: actions/upload-artifact@v4
+      - name: Instalar Node (si usás herramientas que lo requieren, si no podés borrar este paso)
+        uses: actions/setup-node@v4
         with:
-          name: dummy
-          path: ./README.md
-          retention-days: 1
+          node-version: '18'
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v2
+      - name: Crear carpeta de salida
+        run: mkdir -p dist && cp -r * dist || true
+
+      - name: Deploy a GitHub Pages (branch gh-pages)
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: "."  # Cambiá si tu sitio está en otra carpeta
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
