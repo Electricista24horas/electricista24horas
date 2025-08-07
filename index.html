@@ -645,6 +645,11 @@ footer div {
     display: block;
     margin-top: 5px;
   }
+@media screen and (min-width: 768px) {
+  .espacio-cls-pc {
+    display: block !important;
+  }
+}
 
 </style>
 <link href="manifest.json" rel="manifest">
@@ -1159,5 +1164,8 @@ const movableImages = document.querySelectorAll('.img-movable');
 <a href="/electricista-disponible-día-y-noche-para-tu-hogar-o-negocio.html">Electricista disponible día y noche para tu hogar o negocio</a>
 <a href="/electricista-urgente-24-horas-en-tu-barrio.html">Electricista urgente 24 horas en tu barrio</a>
 </div>
+<!-- Espaciador invisible solo para escritorio para evitar CLS -->
+<div class="espacio-cls-pc" style="height: 1600px; display: none;"></div>
+
 </img></body>
 </html>
