@@ -1,1198 +1,774 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="canonical" href="https://electricista24horas.com.ar/instalar.html">
-  <title>Electricista 24hs en CABA y GBA | Urgencias Eléctricas</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- SEO y redes sociales -->
-  <meta name="description" content="Electricista matriculado 24 horas en CABA y Gran Buenos Aires. Urgencias eléctricas con atención rápida. Llame ahora.">
-  <meta property="og:title" content="Electricista 24hs en CABA y GBA | Urgencias Eléctricas">
-  <meta property="og:description" content="Servicio eléctrico urgente en Capital y Gran Buenos Aires. Matriculado COPIME y CTPBA.">
-  <meta property="og:url" content="https://electricista24horas.com.ar">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://electricista24horas.com.ar/logo_resized.jpg">
-  <link rel="apple-touch-icon" sizes="512x512" href="icono512.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1024" />
+  <meta name="description" content="Delantales escolares personalizados para nivel inicial, primario y docentes. Diseños únicos con bordado. Envíos por WhatsApp.">
+  <title>Delantales Escolares</title>
+  <!-- Favicon clásico -->
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Electricista Matriculado 24hs",
-  "image": "https://electricista24horas.com.ar/logo_resized.jpg",
-  "description": "Electricista matriculado 24 horas en CABA y Gran Buenos Aires. Urgencias eléctricas a domicilio, atención inmediata.",
-  "url": "https://electricista24horas.com.ar",
-  "telephone": "+541159156129",
-  "email": "contacto@electricista24horas.com.ar",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "CABA y GBA",
-    "addressLocality": "Ciudad Autónoma de Buenos Aires",
-    "addressRegion": "CABA y Gran Buenos Aires",
-    "postalCode": "1184",
-    "addressCountry": "AR"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": -34.6037,
-    "longitude": -58.3816
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday"
-    ],
-    "opens": "00:00",
-    "closes": "23:59"
-  },
-  "paymentAccepted": "Cash, Credit Card, Debit Card, Mercado Pago, Transfer",
-  "priceRange": "$$",
-  "sameAs": [
-    "https://www.facebook.com/electricidadled/",
-    "https://www.instagram.com/electricistamatriculado24hs/",
-    "https://www.linkedin.com/in/luciano-didiego-417917152/"
-  ]
-}
-</script>
+<!-- Íconos modernos para apps y buscadores -->
+<link rel="apple-touch-icon" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" sizes="512x512" href="icon-512.png">
 
+  <link rel="manifest" href="manifest.json" />
   <style>
 
-    body {
-      background: linear-gradient(to bottom, #000000, #1a1a1a);
-      color: yellow;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      position: relative;
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 1300px;
-      margin: 0px;
-      padding: 20px;
-      box-sizing: border-box;
-      position: relative;
-      z-index: 5;
-    }
-    .caja-central {
-      border: 4px solid yellow;
-      background-color: black;
-      padding: 25px;
-      border-radius: 12px;
-      max-width: 585px;
-      margin-top: 10px;
-      z-index: 2;
-      position: relative;
-      width: 100%;
-      box-sizing: border-box;
-    }
-          h1 {
-      font-size: 70px;
-      font-weight: bold;
-      margin: 0 0 20px 0;
-    }
-    .matriculado { font-size: 48px; margin: 0; }
-    .info { font-size: 38px; line-height: 1.4; }
-    .info.todos { font-size: 34px; }
-    .contact { font-size: 28px; line-height: 1.4; }
-    .name { font-size: 44px; font-weight: bold; }
-    .phone {
-      font-size: 44px;
-      font-weight: bold;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      margin: 10px 0;
-    }
-    .phone a {
-      color: yellow;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .phone a:hover {
-      text-decoration: underline;
-    }
-    .whatsapp-icon {
-      width: 50px;
-      height: 50px;
-      background-color: #25D366;
-      border-radius: 0%;
-      padding: 5px;
-      box-shadow: 0 0 10px #25D366;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      animation: pulse 2s infinite ease-in-out;
-    }
-         .whatsapp-icon:hover {
-      transform: scale(1.2);
-      box-shadow: 0 0 25px #1ebe5d;
-      animation-play-state: paused;
-    }
-    /* Botón WhatsApp escritorio */
-#whatsapp-desktop {
-  position: absolute;
-  top: 500px; /* Ajusta según dónde lo quieras */
-  left: 400px; /* Ajusta según tu diseño */
-  z-index: 9999;
-  display: block; /* Se muestra por defecto en escritorio */
-  width: 60px;
-  height: 60px;
-  background-color: #25D366;
+.whatsapp-flotante {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  width: 90px;
+  height: 90px;
+  background-color: #25d366;
   border-radius: 50%;
-  padding: 5px;
-  box-shadow: 0 0 10px #25D366;
-}
-
-/* Botón WhatsApp superpuesto para celular */
-.whatsapp-superpuesto {
-  display: none; /* Oculto por defecto */
-}
-
-/* Solo mostrar el botón superpuesto en celulares */
-@media screen and (max-width: 767px) {
-  body {
-    overflow-x: hidden !important; /* Evita scroll horizontal */
-  }
-  
-  #whatsapp-desktop {
-    display: none !important; /* Oculta botón escritorio en móvil */
-  }
-
-  .whatsapp-superpuesto {
-    display: block !important; /* Muestra botón celular */
-  }
-}
-
-/* Animación de titilar */
-.titilar-icono {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
   animation: titilar 1s infinite;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-flotante:hover {
+  background-color: #1ebe57;
+}
+
+.whatsapp-flotante img {
+  width: 70px;
+  height: 70px;
 }
 
 @keyframes titilar {
   0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
-  }
+  50% { opacity: 0.6; }
+}
+    
+    .header {
+      padding: 40px 20px 60px;
+      text-align: center;
+      position: relative;
+    }
 
-    @keyframes pulse {
-      0%, 100% {
-        transform: scale(1);
-        box-shadow: 0 0 10px #25D366;
-      }
-      50% {
-        transform: scale(1.1);
-        box-shadow: 0 0 20px #25D366;
-      }
-    }
-    .email { font-size: 26px; word-break: break-word; }
-    #copime-img, #logo-izquierdo {
+    .logo {
       position: absolute;
-      width: 328px;
-      max-width: 45vw;
-      height: auto;
-      border: 2px solid yellow;
-      border-radius: 8px;
-      background-color: black;
-      padding: 6px;
-      box-shadow: 0 0 10px yellow;
-      z-index: 10;
-      transition: top 0.2s ease;
-    }
-    #logo-izquierdo {
-      top: 10px;
+      top: 20px;
       left: 20px;
-      right: auto;
+      width: 200px;
     }
-    .review {
-      background-color: #111;
-      border: 1px solid #444;
-      border-radius: 10px;
-      padding: 15px;
-      margin-bottom: 20px;
-    }
-    .review-header {
-      display: flex;
-      justify-content: space-between;
-      font-weight: bold;
-      font-size: 20px;
-    }
-    .caja-servicios {
-      display: inline-block;
-      border: 4px solid black;
-      background-color: yellow;
-      padding: 15px 25px;
-      border-radius: 12px;
-      max-width: 600px;
-      margin-top: 40px;
-      color: black;
-      text-align: left;
-      font-size: 32px;
-      box-sizing: border-box;
-      z-index: 1;
-      position: relative;
-    }
-    .caja-servicios ul {
-      padding-left: 20px;
-      margin: 0;
-      list-style: none;
-    }
-    .caja-servicios li {
-      position: relative;
-      margin-bottom: 15px;
-      padding-left: 50px;
-      font-weight: 600;
-    }
-         .viñeta1::before,
-    .viñeta2::before,
-    .viñeta3::before,
-    .viñeta4::before,
-    .viñeta5::before {
-      content: "•";
-      position: absolute;
-      left: -0;
+
+    .titulo {
       font-size: 60px;
-      color: black;
-      animation: bulletPulse 2s infinite ease-in-out;
-      top: -29px;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
-    @keyframes bulletPulse {
-      0%, 100% {
-        transform: scale(1);
-        opacity: 1;
-        text-shadow: 0 0 5px black;
-      }
-      50% {
-        transform: scale(1.3);
-        opacity: 0.7;
-        text-shadow: 0 0 15px black;
-      }
+
+    .subtitulo {
+      font-size: 35px;
+      color: #e91e63;
     }
-         /* Contenedor flex para centrar y separar botones */
-    .social-links {
+
+    .franja-azul {
+      background-color: #0060ac;
+      color: white;
+      text-align: center;
+      font-size: 28px;
+      padding: 15px 10px;
+    }
+
+    #cart-icon {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  font-size: 40px;
+  cursor: pointer;
+  color: #000;
+  z-index: 999;
+  background: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+    #cart-count {
+      background: red;
+      color: white;
+      border-radius: 50%;
+      padding: 3px 10px;
+      font-size: 25px;
+      vertical-align: top;
+    }
+
+    .product-list {
       display: flex;
-      justify-content: center;
-      gap: 15px;
+      gap: 20px;
+      padding: 30px 20px;
       flex-wrap: wrap;
-      margin-top: 20px;
+      justify-content: center;
     }
-    /* Estilo base para todos los botones */
-    .social-button {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      width: 160px;
-      height: 45px;
-      padding: 0 12px;
-      border-radius: 10px;
-      background-color: #f0f0f0;
-      color: #000;
-      font-weight: 600;
-      font-size: 16px;
-      text-decoration: none;
-      box-sizing: border-box;
-      transition: background-color 0.3s ease, transform 0.3s ease;
+
+    .product {
+      border: 1px solid #ddd;
+      padding: 10px;
+      width: 480px;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 5px;
     }
-    /* Tamaño de los íconos */
-    .social-button img {
-      width: 24px;
-      height: 24px;
-      display: block;
-    }
-    /* Efecto hover */
-    .social-button:hover {
-      background-color: yellow;
-      color: black;
-      transform: scale(1.05);
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
       cursor: pointer;
     }
-    /* Ajustes específicos por red */
-    .social-button[title="Facebook"] { font-size: 18px; }
-    .social-button[title="Instagram"] { font-size: 18px; }
-    .social-button[title="WhatsApp"] { font-size: 18px; }
-    .social-button[title="LinkedIn"] { font-size: 18px; }
-    .social-button img {
-      width: 50px;
-      height: 40px;
-    }
-    #contador {
-      margin-top: 20px;
-      font-size: 16px;
-      color: #ccc;
-    }
-    /* Imágenes movibles */
-    .img-movable {
-      position: absolute;
-      width: 300px;
-      border: 3px solid yellow;
-      border-radius: 10px;
-      cursor: grab;
-      z-index: 1000;
-      transition: top 0.2s ease;
-    }
-    .img-movable.izquierda1 {
-      top: 100px;
-      left: 10px;
-    }
-    .img-movable.izquierda2 {
-      top: 350px;
-      left: 10px;
-    }
-    #copime-img {
-      right: 20px;
-      top: 10px;
-      width: 365px;
-      max-width: 45vw;
-      height: auto;
-      border: 2px solid yellow;
-      border-radius: 8px;
-      background-color: black;
-      padding: 6px;
-      box-shadow: 0 0 10px yellow;
-      z-index: 10;
-    }
-         /* Ajusto la imagen derecha movible "jeta" */
-         .img-movable.derecha1 {
-         top: 360px; /* lo subí de 200px a 360px para que quede debajo de Copime y no se solape */
-         right: 10px;
-         width: 300px;
-         border: 3px solid yellow;
-         border-radius: 10px;
-         cursor: grab;
-         z-index: 1000;
-         }
-         @media (max-width: 600px) {
-         h1 { font-size: 46px; }
-         .matriculado { font-size: 32px; }
-         .info { font-size: 22px; }
-         .contact { font-size: 20px; }
-         .name, .phone { font-size: 26px; }
-         .email { font-size: 16px; }
-         #copime-img, #logo-izquierdo {
-         position: static;
-         max-width: 200px;
-         margin: 20px auto;
-         display: block;
-         }
-         /* Ajuste para imágenes movibles */
-         .img-movable {
-         position: static;
-         width: 100%;
-         max-width: 300px;
-         margin: 10px auto;
-         display: block;
-         }
-         }
-         @media (max-width: 768px) {
-         .container {
-         flex-direction: column;
-         padding: 10px;
-         }
-         img {
-         width: 100%;
-         height: auto;
-         position: static;
-         }
-         #copime-img,
-         #logo-izquierdo,
-         #edenor-img,
-         #edesur-img,
-         #pagocontarjeta-img,
-         #texto-derecha {
-         position: static !important;
-         width: 100% !important;
-         max-width: 300px;
-         margin: 10px auto;
-         display: block;
-         top: auto !important;
-         left: auto !important;
-         right: auto !important;
-         }
-         .img-movable {
-         position: static;
-         width: 100%;
-         max-width: 300px;
-         margin: 10px auto;
-         display: block;
-         }
-         h1 { font-size: 40px; }
-         .matriculado { font-size: 28px; }
-         .info, .info.todos { font-size: 20px; }
-         .contact { font-size: 18px; }
-         .name, .phone { font-size: 22px; }
-         .email { font-size: 16px; }
-         #texto-derecha { font-size: 20px; }
-         }
 
-          #edenor-img {
-      position: absolute;
-      top: 700px;
-      left: 30px;
-      width: 390px;
-      height: auto;
-      border: 3px solid yellow;
-      border-radius: 10px;
-      background-color: black;
-      padding: 6px;
-      box-shadow: 0 0 10px yellow;
-      z-index: 100;
+    .options {
+      text-align: left;
+      margin-top: 10px;
     }
-    #edesur-img {
-      position: absolute;
-      top: 870px;
-      left: 30px;
-      width: 390px;
-      height: auto;
-      border: 3px solid yellow;
-      border-radius: 10px;
-      background-color: black;
-      padding: 6px;
-      box-shadow: 0 0 10px yellow;
-      z-index: 100;
+
+    select, input[type='number'] {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
     }
-    #pagocontarjeta-img {
-  position: absolute;
-  top: 850px; /* Subido para que no se encime */
-  left: 950px;
-  width: 300px;
-  height: auto;
-  border: 3px solid yellow;
-  border-radius: 10px;
-  background-color: black;
-  padding: 6px;
-  box-shadow: 0 0 10px yellow;
-  z-index: 100;
+
+    #cart {
+      padding: 20px;
+      background: #f5f5f5;
+      display: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    #cart ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #cart-items li {
+      margin-bottom: 10px;
+    }
+
+    button {
+  background-color: #0060ac;
+  color: white;
+  border: none;
+  padding: 12px;
   cursor: pointer;
-  -webkit-user-drag: none;
-  user-select: none;
-}
-    /* Texto nuevo arriba de la imagen Pago con tarjeta */
-         #texto-derecha {
-  position: absolute;
-  top: 660px;
-  left: 910px;
-  z-index: 150;
-  width: 400px;
-  min-height: 130px;
-  box-sizing: border-box;
-  background-color: black;
-  color: yellow;
-  font-size: 26px;
+  border-radius: 6px;
+  margin-top: 1px;
+  font-size: 16px;
   font-weight: bold;
-  padding: 10px;
-  border: 2px solid yellow;
+}
+
+    button:hover {
+      background-color: #000000;
+    }
+
+    .imagen-doble {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .imagen-doble img {
+  width: 50%;
+  height: 300px; /* o el alto fijo que quieras */
   border-radius: 8px;
-  text-align: center;
-  animation: titilar 0.5s infinite;
-}         
-    .boton-emergencia {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: red;
-      color: white;
-      padding: 15px 20px;
-      border-radius: 10px;
-      font-weight: bold;
-      font-size: 1.1rem;
-      text-decoration: none;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
-      z-index: 9999;
-      animation: parpadeo 1s infinite;
-      transition: transform 0.2s ease;
-    }
-         .boton-emergencia:hover {
-      transform: scale(1.05);
-    }
-    @keyframes parpadeo {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.6; }
-    }
-    /* Media query para pantallas pequeñas (celulares) */
-    @media (max-width: 480px) {
-      #edenor-img,
-      #edesur-img,
-      #pagocontarjeta-img {
-        width: 300px;
-        height: auto;
-        position: static;
-        margin: 10px auto;
-        display: block;
+  object-fit: contain; /* para que la imagen se escale manteniendo proporción sin recortes */
+  transition: transform 0.3s ease;
+}
+
+#modal-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .imagen-doble img:hover {
+    transform: scale(1.05);
+  }
+
+  #modal-bordado {
+      text-transform: uppercase;
       }
-         .caja-central,
-      .caja-servicios,
-      #texto-derecha {
-        width: 90%;
-        margin: 10px auto;
-        text-align: center;
-        position: static !important;
+
+      .btn-nivel {
+    background-color: white;
+    color: #005bac;
+    border: 2px solid #005bac;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .btn-nivel:hover {
+    background-color: #005bac;
+    color: white;
+}
+
+  @media (max-width: 600px) {
+    .titulo {
+      font-size: 28px;
+    }
+      .subtitulo {
+        font-size: 16px;
       }
-    /* Ajustes para logos */     
-    html body .container 
-    #logo-izquierdo {
-    position: absolute !important;
-    top: 50px !important;   /* Cambiá este valor para mover verticalmente */
-    left: 20px !important;  /* Cambiá este valor para mover horizontalmente */
-    width: 120px !important;
-    height: auto !important;
-    z-index: 1000 !important;
-    margin: 0 !important;
-    display: block !important;
-  }
+      .logo {
+        width: 90px;
+        top: 15px;
+        left: 15px;
+      }
+      #cart-icon {
+        top: 20px;
+        right: 20px;
+        font-size: 20px;
+      }
+      .product {
+      width: 90%;
+      }
 
-    /* Corrección específica para #copime-img */
-    html body .container #copime-img {
-      position: static !important;
-      width: 80px !important;
-      height: auto !important;
-      display: block !important;
-      margin: 10px auto !important;
+      .imagen-doble {
+      flex-direction: column;
+      }
+
+      .imagen-doble img {
+      width: 100%;
+      height: 180px;
+      }
+
     }
 
-    /* Para que el body no haga scroll horizontal */
-    body {
-      overflow-x: hidden;
-    }
-
-    .boton-titilando {
-      animation: titilar 1s infinite;
-    }
-}
-
-  .seo-texto-oculto {
-  position: absolute !important;
-  left: -9999px !important;
-  height: 1px !important;
-  overflow: hidden !important;
-  width: 1px !important;
-  white-space: nowrap !important;
-}
-
-@media screen and (max-width: 767px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  .whatsapp-escritorio {
-    display: none !important;
-  }
-
-  .redes-sociales {
-  background-color: transparent !important;
-  height: auto !important;
-  min-height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: none !important;
-}
-
-.redes-sociales:empty {
-  display: none;
-}
-
-#footer {
-  background-color: transparent !important;
-  margin: 0 !important;
-  padding: 10px 0 !important;
-  border: none !important;
-  color: #666;
-}
-
-footer a {
-  display: inline;
-  padding: 0 !important;
-  margin: 0 !important;
-  line-height: normal !important;
-  text-decoration: underline !important;
-  color: #0077cc !important;
-  cursor: pointer !important;
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: white;
+  color: #0060ac;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-footer div {
-  margin: 3px 0;
-}
-
-  .defensa-consumidor,
-.creador,
-.electricidadled-email,
-.copyright {
+main {
+  flex: 1;
+  padding: 20px;
   text-align: center;
-  margin: 3px 0;
-  font-size: 0.9em;
-  color: #666;
 }
 
-  /* Centrar copyright también */
-  .copyright {
-    text-align: center;
-    width: 100%;
-    display: block;
-    margin-top: 5px;
+  footer {
+    background-color: #f4f4f4;
+    padding: 30px 20px;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
-</style>
+  .columna-footer {
+    flex: 1 1 300px;
+    margin: 10px;
+  }
 
-  <link rel="manifest" href="manifest.json" />
+  .columna-footer h4 {
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
 
-</head>
+  .img-pago,
+  .img-envio {
+    height: 40px;
+    width: auto;
+    margin: 5px 10px 5px 0;
+    vertical-align: middle;
+  }
 
-<body>
-
-  <div class="container">
-    <!-- A partir de acá todo está perfecto -->
-<!-- BLOQUE SEO OCULTO COMPLETO -->
-<div class="seo-texto-oculto">
-  <h1>Electricista Matriculado 24hs en CABA y Gran Buenos Aires</h1>
-  <p>Urgencias eléctricas a domicilio, atención inmediata</p>
-  <p>Matriculado COPIME y CTPBA, legal y habilitado</p>
-  <p>Electricista 24 horas en Capital y Provincia. Atendemos urgencias eléctricas los 365 días del año.</p>  
-  <p>Servicio eléctrico urgente en Palermo, Almagro, Recoleta, Villa Urquiza, Belgrano, Caballito, San Cristóbal, Boedo y Microcentro.</p>  
-  <p>Electricista habilitado en San Martín, Caseros, Ballester, Vicente López, Florida, Olivos, Munro, Tigre, San Fernando y San Isidro.</p>  
-  <p>Zona sur: Avellaneda, Lanús, Banfield, Lomas de Zamora, Quilmes, Temperley, Monte Grande y Ezeiza.</p>  
-  <p>Zona oeste: Morón, Ituzaingó, Merlo, Castelar, Ramos Mejía, Haedo y Hurlingham.</p>  
-  <p>Atención inmediata en consorcios, casas, PH, locales comerciales, oficinas y galpones industriales.</p>  
-  <p>Matriculado COPIME M.N. R003541 y CTPBA M.P. RIE-1-52559.</p>  
-  <p>Instalaciones nuevas, renovación de cableado, tableros eléctricos, disyuntores, térmicas, puesta a tierra, tomas, llaves, luminarias.</p>  
-  <p>Firma de planos eléctricos, boletos Edenor y Edesur, certificados de habilitación.</p>
-  <p>Cortocircuitos, disyuntores que saltan, baja tensión, corte de luz parcial o total, humedad en cajas, medidores con fallas.</p>  
-  <p>Electricista confiable y económico, atención profesional con herramientas adecuadas.</p>  
-  <p>Financiamos obras eléctricas. Presupuestos sin cargo.</p>  
-  <p>Pagos con tarjeta de crédito, débito, Mercado Pago, transferencia o efectivo.</p> 
-  <p>Instalaciones legales bajo normas AEA, IRAM, COPIME, CTPBA, Edesur y Edenor.</p>  
-  <p>Soluciones eléctricas en el acto. Urgencias reales. Sin vueltas.</p>  
-  <p>Luz trifásica, tableros nuevos, disyuntores separados, líneas para aires, termotanques, hornos y estufas.</p>  
-  <p>Electricista urgente con posnet, técnico para comercios habilitados.</p>  
-  <p>Electricista profesional, seguro, honesto y con experiencia.</p>  
-  <p>Electricista 24hs con atención personalizada.</p>
-
-  <!-- FAQ OCULTA PARA SEO -->
-  <div class="faq">
-    <h2>Preguntas frecuentes sobre servicios eléctricos</h2>
-
-    <h3>¿Atienden urgencias eléctricas los fines de semana?</h3>
-    <p>Sí, brindamos servicio eléctrico 24 horas todos los días, incluso fines de semana y feriados.</p>
-
-    <h3>¿Pueden hacer trabajos con factura?</h3>
-    <p>Sí, emitimos factura A o B. Somos electricistas matriculados COPIME y CTPBA.</p>
-
-    <h3>¿Qué zonas atienden con urgencia?</h3>
-    <p>Trabajamos en todo CABA y Gran Buenos Aires: norte, sur, oeste y zona céntrica.</p>
-
-    <h3>¿Cuánto cuesta una reparación eléctrica de urgencia?</h3>
-    <p>El costo depende del horario, la urgencia y la zona. Damos presupuesto sin cargo antes de comenzar.</p>
-
-    <h3>¿Puedo pagar con tarjeta o Mercado Pago?</h3>
-    <p>Sí. Aceptamos tarjetas de crédito, débito, Mercado Pago, transferencia y efectivo.</p>
-  </div>
-  <!-- Agregá este bloque con enlaces para que Google rastree mejor -->
-<div class="enlaces-importantes" style="text-align:center; margin: 20px 0;">
-  <a href="/electricista-24hs.html">Electricista 24hs</a> |
-  <a href="/electricista-matriculado.html">Matriculado</a> |
-  <a href="/electricista-capital-federal.html">Capital Federal</a> |
-  <a href="/electricista-gba.html">GBA</a> |
-  <a href="/servicios-electricos.html">Servicios</a> |
-  <a href="/electricista-cerca.html">Cerca tuyo</a> |
-  <a href="/urgencias-electricas.html">Urgencias</a>
-</div>
-</div>
-         
-<div class="caja-central" style="position: relative; padding: 0; border: none; background: none; margin-bottom: -20px;">
-  <!-- Botón de WhatsApp solo para CELULAR -->
-  <div class="whatsapp-superpuesto" style="position: absolute; top: 345px; left: 10px; z-index: 2;">
-    <a href="https://wa.me/5491159156129?text=Hola%20Luciano,%20necesito%20un%20electricista"
-       target="_blank"
-       title="WhatsApp"
-       style="display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: 10px; color: yellow; text-decoration: none; font-size: 24px; font-weight: bold;">
-      
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-           alt="WhatsApp"
-           class="titilar-icono"
-           style="width: 40px; height: 45px;" />
-    </a>
-  </div>
-</div>
-
-  <!-- Imagen ocupando el ancho, con menos espacio debajo -->
-  <img 
-    src="electricista.png"
-    alt="Encabezado visual"
-    style="width: 100%; max-width: 510px; border-radius: 12px; border: 2px solid yellow;"
-  />
-</div>
-
-         <!-- 2. Imágenes de CTPBA y COPIME (lado a lado) -->
-    <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 20px;">
-      <img src="ctpba.jpg" alt="Logo CTPBA, Colegio de Tecnicos de la Provincia de Buenos Aires" id="logo-izquierdo">
-      <img src="copime.jpg" alt="COPIME, Consejo Profesional de Ingenieria Mecanica de Electricistas" id="copime-img" />
-    </div>
-    
-         <!-- 3. Recuadro central inferior con texto -->
-       <img src="trabajos.png" id="trabajos-img" alt="Solicitud de Nuevo Medidor Monofásico/Trifásico, Certificado DCI, Armado de Pilar, Tramites Edenor/Edesur, Certificado Medicion Puesta a Tierra Res. SRT 900/2015" style="width: 100%; max-width: 400px; display: block; margin: 20px auto;">         
-         
-               <!-- 4. Imagen de Edenor -->
-    <img src="edenor.jpg" id="edenor-img" alt="Logo de Edenor" width="390" height="260" loading="lazy">
-
-    <!-- 5. Imagen de Edesur -->
-    <img src="edesur.jpg" id="edesur-img" alt="Logo Edesur" width="390" height="260" loading="lazy">
-
-    <!-- 6. Texto titilando "Financiamos tus obras" -->
-    <div id="texto-derecha">¡¡¡FINANCIAMOS TUS OBRAS!!!<br> Consultas y llamadas por WhatsApp.</div>
-
-    <!-- 7. Imagen de Pago con tarjeta con acción de mostrar datos -->
-<!-- Imagen de Pago con tarjeta con acción -->
-<!-- Imagen de Pago con tarjeta (ya no es arrastrable) -->
-<img 
-  src="pago-con-tarjeta.jpg" 
-  alt="Pago con tarjeta, Mercado Pago, Visa, Mastecard, Banelco, Link, Transferencia" 
-  id="pagocontarjeta-img" 
-  width="300" height="200"
-  loading="lazy"
-  draggable="false"
-  style="cursor: pointer; max-width: 300px;"
-  onclick="toggleDatosPago()"
-/>
-
- <!-- Botón de reseñas con estrellas amarillas -->
-<div id="boton-resenas" style="display: flex; justify-content: center; margin: 20px auto; max-width: 450px;">
-  <a href="https://g.page/r/CdYlXUO71w5CEBM/review" target="_blank" style="
+  .contacto-item,
+  .red-social {
     display: flex;
     align-items: center;
-    gap: 10px;
-    background-color: #070300; /* Amarillo suave */
-    color: #fdfcfc;
-    padding: 12px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 22px;
-    box-shadow: 0 4px 8px rgba(247, 243, 4, 0.3);
-    transition: transform 0.3s, box-shadow 0.3s;
-  "
-  onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 12px rgba(255, 215, 0, 0.6)';"
-  onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(255, 215, 0, 0.3)';"
-  >
-    <!-- Contenedor de estrellas -->
-    <div style="display: flex; gap: 3px;">
-      <svg width="30" height="30" fill="#FFD700" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-      <svg width="30" height="30" fill="#FFD700" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-      <svg width="30" height="30" fill="#FFD700" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-      <svg width="30" height="30" fill="#FFD700" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-      <svg width="30" height="30" fill="#FFD700" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-    </div>
+    margin-bottom: 10px;
+  }
 
-    <span>Dejanos tu opiñon</span>
-  </a>
-</div>
+  .contacto-item img,
+  .red-social img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
 
-<style>
-  @keyframes titilar-fondo {
+  .columna-footer ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .columna-footer li {
+    margin-bottom: 5px;
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+    background-color: #f4f4f4;
+    width: 100%;
+  }
+
+  .seo-texto-oculto {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .columna-footer {
+      margin: 15px 0;
+    }
+
+    .contacto-item,
+    .red-social {
+      justify-content: center;
+    }
+
+    /* Asegura que solo el texto dentro de .contacto-negro sea negro */
+.contacto-negro {
+  color: black !important;
+  font-size: 14px;
+}
+
+/* Fijamos el tamaño de los íconos para que no se agranden */
+.contacto-negro img {
+  width: 16px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+  }
+
+@keyframes titilar {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
 
-#boton-app {
-  width: 150px;
-  height: 150px;
-  background: url('icono512.png') no-repeat center center;
-  background-size: cover;
-  border-radius: 50%;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 8px;
-  box-sizing: border-box;
-  color: rgb(252, 3, 3);
+.hola-link {
+  color: #e91e63;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 1.1;
-  text-shadow: 1px 1px 2px black;
-  animation: titilar-fondo 2s infinite;
+  margin-left: 5px;
+  cursor: pointer;
+  animation: titilar 1s infinite;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.popup-imagenes {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
   z-index: 9999;
 }
+.popup-imagenes img {
+  max-width: 45%;
+  margin: 0 10px;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 768px) {
 
-/* 💻 ESTILO SOLO PARA PC */
-@media screen and (min-width: 768px) {
-  #boton-app {
-    position: absolute;
-    bottom: 150px;
-    left: 110px;
+  .product {
+    width: 95% !important;
+    margin: 0 auto 20px;
+  }
+
+  .imagen-doble {
+    flex-direction: column !important;
+    gap: 10px;
+  }
+
+  .imagen-doble img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .logo {
+    width: 100px !important;
+    top: 10px !important;
+    left: 10px !important;
+  }
+
+  .titulo {
+    font-size: 28px !important;
+  }
+
+  .subtitulo {
+    font-size: 16px !important;
+  }
+
+  .btn-nivel {
+    width: 100%;
+    margin: 5px 0 !important;
+    font-size: 16px;
+  }
+
+  .franja-azul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .product-list {
+    padding: 20px 10px !important;
+  }
+
+  .columna-footer {
+    flex: 1 1 100%;
+    margin: 10px auto !important;
+    text-align: center;
+  }
+
+  .copyright {
+    font-size: 12px !important;
+    padding: 10px !important;
+  }
+
+  .whatsapp-flotante {
+    right: 10px !important;
+    bottom: 20px !important;
+    width: 55px !important;
+    height: 55px !important;
+  }
+
+  #cart-icon {
+    top: 15px !important;
+    right: 15px !important;
+  }
+
+.header {
+  padding-top: 120px !important; /* deja espacio para el logo */
+}
+
+.logo {
+  position: relative !important; /* quita absolute para que fluya con el contenido */
+  display: block;
+  margin: 0 auto 10px auto;
+}
+}
+
+@keyframes titileo {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 1);
+    transform: scale(1.05);
   }
 }
 
-/* 📱 ESTILO SOLO PARA CELULAR */
-@media screen and (max-width: 767px) {
-  #boton-app {
-    position: static;
-    margin: 30px auto;
-  }
-  }
-
-  @media screen and (max-width: 600px) {
-  #boton-urgencia {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1000;
-    transition: opacity 0.3s ease;
-  }
-
-  footer:hover ~ #boton-urgencia,
-  .pie-final:hover ~ #boton-urgencia {
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  #pie-final {
-    position: relative;
-    z-index: 10;
-  
+.boton-flotante-logo {
+  position: fixed;
+  right: 15px;
+  top: 100px; /* Ajustá si querés que quede más arriba o más abajo */
+  z-index: 9999;
+  display: block;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #0077cc;
+  padding: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  animation: titileo 1s infinite;
+  transition: transform 0.10s ease;
 }
+
+.boton-flotante-logo:hover {
+  transform: scale(1.1);
 }
+
+.boton-flotante-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
 </style>
+</head>
+<body>
 
-<a href="instalar.html" id="boton-app" title="App de Emergencia Eléctrica">
-  <span>APP<br>Emergencia<br>Eléctrica<br>24hs</span>
-</a>
+  <!-- ENCABEZADO -->
+  <header class="header">
+    <img src="logo-delantales.jpg" alt="Logo Delantales Escolares" class="logo" />
+    <h1 class="titulo">Delantales Escolares</h1>
+    <p class="subtitulo">¡A clases con estilo propio!</p>
+    <div id="cart-icon">🛒 <span id="cart-count">0</span></div>
+  </header>
 
-<!-- Redes sociales -->
-<div id="sociales" class="social-links" role="contentinfo">
-  <a href="https://www.facebook.com/electricidadled/" target="_blank" class="social-button" title="Facebook">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook logo" />
-    Facebook
-  </a>
-  <a href="https://www.instagram.com/electricistamatriculado24hs/" target="_blank" class="social-button" title="Instagram">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram logo" />
-    Instagram
-  </a>
-  <div id="whatsapp-movable" style="position: absolute; top: 200px; left: 50px; z-index: 9999; cursor: grab;"></div>
-  <a href="https://wa.me/5491159156129" target="_blank" class="social-button" title="WhatsApp">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp logo" />
-    WhatsApp
-  </a>
-  <a href="https://www.linkedin.com/in/luciano-didiego-417917152/" target="_blank" class="social-button" title="LinkedIn">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn logo" />
-    LinkedIn
-  </a>
-
-</div>
-
-<div id="contador" aria-live="polite"></div>
-
-<!-- Script para imágenes arrastrables -->
-<script>
-
-const movableImages = document.querySelectorAll('.img-movable');
-
-  let currentDrag = null;
-  let offsetX = 0;
-  let offsetY = 0;
-
-  movableImages.forEach(img => {
-    if (!img) return; // Por si alguna no está cargada
-    img.style.position = 'absolute';
-
-    img.addEventListener('mousedown', (e) => {
-      currentDrag = img;
-      offsetX = e.clientX - img.getBoundingClientRect().left;
-      offsetY = e.clientY - img.getBoundingClientRect().top;
-      img.style.cursor = 'grabbing';
-      e.preventDefault();
-    });
-  });
-
-  document.addEventListener('mousemove', (e) => {
-    if (currentDrag) {
-      let left = e.clientX - offsetX;
-      let top = e.clientY - offsetY;
-
-      const maxLeft = window.innerWidth - currentDrag.offsetWidth;
-      const maxTop = window.innerHeight - currentDrag.offsetHeight;
-      if (left < 0) left = 0;
-      if (top < 0) top = 0;
-      if (left > maxLeft) left = maxLeft;
-      if (top > maxTop) top = maxTop;
-
-      currentDrag.style.left = left + 'px';
-      currentDrag.style.top = top + 'px';
-    }
-  });
-
-  document.addEventListener('mouseup', () => {
-    if (currentDrag) {
-      currentDrag.style.cursor = 'grab';
-      currentDrag = null;
-    }
-  });
-
-  // Función para mostrar/ocultar los datos de transferencia
-  function toggleDatosPago() {
-    const contenedor = document.getElementById('datos-pago');
-    contenedor.style.display = (contenedor.style.display === 'none') ? 'block' : 'none';
-  }
-</script>
-
-     <!-- Botón de urgencias fijo centrado abajo -->
-<div id="boton-urgencias-container" style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 9999; text-align: center;">
-  <button id="boton-urgencias" style="background-color: red; color: white; font-weight: bold; font-size: 20px; border: none; border-radius: 12px; padding: 12px 20px; cursor: pointer;">
-    🚨 URGENCIAS 24hs
-  </button>
-  <div id="opciones-urgencias" style="display: none; margin-top: 10px;">
-    <a href="tel:+541159156129" id="llamar-btn" style="display: block; background: #222; color: white; padding: 10px; border-radius: 10px; margin-bottom: 6px; text-decoration: none;">
-      📞 Llamar a Luciano
-    </a>
-    <a href="https://wa.me/5491159156129?text=Hola%20Luciano,%20tengo%20una%20urgencia%20eléctrica" target="_blank" id="whatsapp-btn" style="display: block; background: #25D366; color: white; padding: 10px; border-radius: 10px; text-decoration: none;">
-      💬 WhatsApp a Luciano
-    </a>
-  </div>
-</div>
-
-<!-- Audio cazafantasmas -->
-<audio id="audio-cazafantasmas" preload="auto" loop>
-  <source src="cazafantasmas.mp3" type="audio/mpeg" />
-  Tu navegador no soporta audio.
-</audio>
-
-<script>
-  const botonUrgencias = document.getElementById('boton-urgencias');
-  const opcionesUrgencias = document.getElementById('opciones-urgencias');
-  const audiocazafantasmas = document.getElementById('audio-cazafantasmas');
-
-  botonUrgencias.addEventListener('click', () => {
-    if (opcionesUrgencias.style.display === 'none' || opcionesUrgencias.style.display === '') {
-      opcionesUrgencias.style.display = 'block';
-      audiocazafantasmas.play().catch(() => {
-        // Algunos navegadores bloquean autoplay, pedir interacción
-        console.log('Audio bloqueo por autoplay');
-      });
-    } else {
-      opcionesUrgencias.style.display = 'none';
-      audiocazafantasmas.pause();
-      audiocazafantasmas.currentTime = 0;
-    }
-  });
-
-  document.getElementById('llamar-btn').addEventListener('click', () => {
-    audiocazafantasmas.pause();
-    audiocazafantasmas.currentTime = 0;
-    opcionesUrgencias.style.display = 'none';
-  });
-
-  document.getElementById('whatsapp-btn').addEventListener('click', () => {
-    audiocazafantasmas.pause();
-    audiocazafantasmas.currentTime = 0;
-    opcionesUrgencias.style.display = 'none';
-  });
-</script>
-
-  <!-- Últimos elementos de tu página -->
-
-  <!-- BOTÓN DE WHATSAPP DESKTOP FLOTANTE Y MÓVIL -->
-<a href="https://wa.me/5491159156129?text=Hola%20Luciano,%20necesito%20un%20electricista"
-   target="_blank"
-   id="whatsapp-desktop"
-   title="WhatsApp"
-   style="
-     position: absolute;
-     top: 510px;
-     left: 405px;
-     width: 50px;
-     height: 50px;
-     background-color: #25D366;
-     border-radius: 50%;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     cursor: grab;
-     z-index: 99999;
-     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-     resize: both;
-     overflow: hidden;
-     border: 2px solid #128C7E;
-   ">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-       alt="WhatsApp" 
-       style="width: 70%; height: 70%;" />
-</a>
-
-<style>
-  #whatsapp-desktop {
-    display: none;
-    animation: titilar 2s infinite;
-  }
-  @media screen and (min-width: 768px) {
-    #whatsapp-desktop {
-      display: flex;
-    }
-  }
-  @keyframes titilar {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.1; }
-  }
-</style>
-
-<!-- SCRIPT PARA DRAG DEL BOTÓN WHATSAPP -->
-<script>
-(function() {
-  const btn = document.getElementById('whatsapp-desktop');
-  let isDragging = false;
-  let dragStartX = 0;
-  let dragStartY = 0;
-  let btnStartLeft = 0;
-  let btnStartTop = 0;
-
-  btn.addEventListener('mousedown', e => {
-    if (e.target === btn) {
-      isDragging = true;
-      dragStartX = e.clientX;
-      dragStartY = e.clientY;
-      const rect = btn.getBoundingClientRect();
-      btnStartLeft = rect.left + window.scrollX;
-      btnStartTop = rect.top + window.scrollY;
-      btn.style.cursor = 'grabbing';
-      e.preventDefault();
-    }
-  });
-
-  window.addEventListener('mousemove', e => {
-    if (!isDragging) return;
-    let newLeft = btnStartLeft + (e.clientX - dragStartX);
-    let newTop = btnStartTop + (e.clientY - dragStartY);
-
-    const maxLeft = window.scrollX + window.innerWidth - btn.offsetWidth;
-    const maxTop = window.scrollY + window.innerHeight - btn.offsetHeight;
-    if (newLeft < window.scrollX) newLeft = window.scrollX;
-    if (newTop < window.scrollY) newTop = window.scrollY;
-    if (newLeft > maxLeft) newLeft = maxLeft;
-    if (newTop > maxTop) newTop = maxTop;
-
-    btn.style.left = newLeft + 'px';
-    btn.style.top = newTop + 'px';
-  });
-
-  window.addEventListener('mouseup', () => {
-    if (isDragging) {
-      isDragging = false;
-      btn.style.cursor = 'grab';
-    }
-  });
-})();
-</script>
-
-<!-- SCRIPT PARA OCULTAR BOTÓN DE URGENCIAS CUANDO SE SOLAPA -->
-<script>
-  function esSolapado(elemento1, elemento2) {
-    const r1 = elemento1.getBoundingClientRect();
-    const r2 = elemento2.getBoundingClientRect();
-    return !(r1.right < r2.left || 
-             r1.left > r2.right || 
-             r1.bottom < r2.top || 
-             r1.top > r2.bottom);
-  }
-
-  window.addEventListener('scroll', function() {
-    const botonContainer = document.getElementById('boton-urgencias-container');
-    const sociales = document.getElementById('sociales');
-    const footer = document.getElementById('footer') || document.querySelector('footer');
-
-    if (!botonContainer || !sociales || !footer) return;
-
-    // Si el botón se solapa con redes sociales o con el footer, ocultarlo
-    if (esSolapado(botonContainer, sociales) || esSolapado(botonContainer, footer)) {
-      botonContainer.style.opacity = '0';
-      botonContainer.style.pointerEvents = 'none';
-    } else {
-      botonContainer.style.opacity = '1';
-      botonContainer.style.pointerEvents = 'auto';
-    }
-  });
-</script>
-
-  <!-- Espacio para que el botón flotante no tape el footer -->
-<div style="height: 1px;"></div>
-
-<!-- FOOTER FINAL -->
-<footer id="footer" style="background: none; padding: 10px 0; text-align: center; color: #666;">
-  <div style="margin: 10px 0; font-size: 2em;">
-    <small>
-      <a href="mailto:electricidadled2025@gmail.com" style="color: inherit; text-decoration: none;">
-        electricidadled2025@gmail.com
-      </a>
-    </small>
+  <!-- FRANJA AZUL -->
+  <div class="franja-azul">
+    <button class="btn-nivel" onclick="location.href='nivel-inicial.html'">NIVEL INICIAL</button>
+    <button class="btn-nivel" onclick="location.href='nivel-primario.html'">NIVEL PRIMARIO</button>
+    <button class="btn-nivel" onclick="location.href='docentes.html'">DOCENTES</button>
   </div>
 
-  <p style="text-align: center; margin: 10px 0; font-size: 1.5em; line-height: 1.2;">
-  <a href="https://www.argentina.gob.ar/economia/industria-y-comercio/defensadelconsumidor"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="color: #0077cc; text-decoration: underline; cursor: pointer; display: inline-block; padding: 5px 10px;">
-    Defensa del Consumidor
-  </a>
+  <main class="product-list">
+
+  <div class="product">
+    <div class="imagen-doble" onclick="mostrarModal('Ponchito Cuadrille Personalizado', 19800, ['ALESSA.jpg', 'COSTADOP.jpg', 'CATALINA.jpg', 'JOAQUINA.jpg', 'PIETRO.jpg', 'LEIA.jpg', 'PEDRO.jpg', 'TOMI.jpg', 'VALENTIN.jpg'], ['Violeta', 'Verde', 'Rosa', 'Naranja', 'Verde', 'Turqueza', 'Amarillo', 'Verde', 'Rojo'])">
+      <img src="PIETRO.jpg" alt="Delantal personalizado modelo PIETRO - Frente">
+      <img src="PIETR2.jpg" alt="Dorso Ponchito">
+    </div>
+    <h3 style="margin-top: 40px; margin-bottom: 5px;">Ponchito Cuadrille</h3>
+    <h3 style="margin-top: 0;">Personalizado</h3>
+    <p>$19.800</p>
+  </div>
+
+  <div class="product">
+    <div class="imagen-doble" onclick="mostrarModal('Cruzado Cuadrille Personalizado', 19800, ['CATALINAC.jpg', 'JUANAC.jpg', 'ROSAC.jpg', 'DELFINAC.jpg', 'LUNAC.jpg', 'VITAC.jpg', 'CHAROC.jpg', 'FELIPEC.jpg', 'LEONARDOC.jpg'], ['Violeta', 'Verde', 'Rosa', 'Naranja', 'Turqueza', 'Amarillo', 'Rojo', 'Azul', 'Rojo'])">
+      <img src="VITAC.jpg" alt="Frente Cruzado">
+      <img src="ESPALDAC.jpg" alt="Dorso Cruzado">
+    </div>
+    <h3 style="margin-top: 40px; margin-bottom: 5px;">Cruzado Cuadrille</h3>
+    <h3 style="margin-top: 0;">Personalizado</h3>
+    <p>$19.800</p>
+  </div>
+
+  <div class="product">
+    <div class="imagen-doble" onclick="mostrarModal('Ponchito Cuadrille Clásico', 17600, ['ALESSA2.jpg', 'CATALINA2.jpg', 'JOAQUINA2.jpg', 'PIETRO2.jpg', 'LEIA2.jpg', 'PEDRO2.jpg', 'TOMI2.jpg', 'VALENTIN2.jpg'], ['Violeta', 'Rosa', 'Naranja', 'Verde', 'Turqueza', 'Amarillo', 'Verde', 'Rojo'])">
+      <img src="LEIA2.jpg" alt="Frente Ponchito Clásico">
+      <img src="LEI.jpg" alt="Dorso Ponchito Clásico">
+    </div>
+    <h3 style="margin-top: 40px; margin-bottom: 5px;">Ponchito Cuadrille</h3>
+    <h3 style="margin-top: 0;">Clásico</h3>
+    <p>$17.600</p>
+  </div>
+
+  <div class="product">
+    <div class="imagen-doble" onclick="mostrarModal('Cruzado Cuadrille Clásico', 17600, ['CATALINAC2.jpg', 'JUANAC2.jpg', 'ROSAC.jpg', 'DELFINAC2.jpg', 'LUNAC2.jpg', 'VITAC2.jpg', 'CHAROC2.jpg', 'FELIPEC2.jpg', 'VITAC2.jpg', 'LEONARDOC2.jpg'], ['Violeta', 'Verde', 'Rosa', 'Naranja', 'Turqueza', 'Amarillo', 'Rojo', 'Azul', 'Amarillo', 'Rojo'])">
+      <img src="LEONARDOC2.jpg" alt="Frente Cruzado Clásico">
+      <img src="ESPALDAC2.jpg" alt="Dorso Cruzado Clásico">
+    </div>
+    <h3 style="margin-top: 40px; margin-bottom: 5px;">Cruzado Cuadrille</h3>
+    <h3 style="margin-top: 0;">Clásico</h3>
+    <p>$17.600</p>
+  </div>
+
+  <div class="product">
+    <div class="imagen-doble" onclick="mostrarModal('Ponchito/Cruzado Acrocel', 18900, ['MANUEL.jpg', 'DOBLE.jpg', 'JMG1.jpg'], ['Rosa', 'Azul', 'Rojo'])">
+      <img src="JMG1.jpg" alt="Frente Cruzado">
+      <img src="JMG2.jpg" alt="Dorso Cruzado">
+    </div>
+    <h3 style="margin-top: 40px; margin-bottom: 5px;">Ponchito/Cruzado</h3>
+    <h3 style="margin-top: 0;">Acrocel</h3>
+    <p>$18.900</p>
+  </div>
+
+  <div class="product">
+    <div class="imagen-doble" onclick="mostrarModal('Poncho un Bolsillo Nivel Primario', 17600, ['cuello-redondo.jpg'], ['Blanco'])">
+      <img src="cuello-redondo.jpg" alt="Frente Ponchito Clásico">
+      <img src="costado.jpg" alt="Dorso Ponchito Clásico">
+    </div>
+    <h3 style="margin-top: 40px; margin-bottom: 5px;">Poncho un Bolsillo</h3>
+    <h3 style="margin-top: 0;">Nivel Primario</h3>
+    <p>$17.600</p>
+  </div>
+
+  <div class="product">
+    <div class="imagen-doble" onclick="mostrarModal('Poncho dos Bolsillos Nivel Primario', 17600, ['2-bolsillos.jpg'], ['Blanco'])">
+      <img src="2-bolsillos.jpg" alt="Frente Ponchito Clásico">
+    </div>
+    <h3 style="margin-top: 40px; margin-bottom: 5px;">Poncho dos Bolsillos</h3>
+    <h3 style="margin-top: 0;">Nivel Primario</h3>
+    <p>$17.600</p>
+  </div>
+
+  <div class="product">
+    <div class="imagen-doble" onclick="mostrarModal('Poncho Escote V Nivel Primario', 17600, ['escote-en-v.jpg'], ['Blanco'])">
+      <img src="escote-en-v.jpg" alt="Poncho escote V">
+  </div>
+    <h3 style="margin-top: 40px; margin-bottom: 5px;">Poncho Escote V</h3>
+    <h3 style="margin-top: 0;">Nivel Primario</h3>
+    <p>$17.600</p>
+  </div>
+
+  <div class="product">
+    <div class="imagen-doble" onclick="mostrarModal('Cruzado Nivel Primario', 17600, ['CRUZADO BLANCO.jpg', 'LIBERTY FUXCIA.jpg', 'LIBERTY VIOLETA.jpg', 'BOLSILLO.jpg'], ['Celeste', 'Fuxcia', 'Violeta', 'Violeta'])">
+      <img src="CRUZADO BLANCO.jpg" alt="Cruzado Nivel Primario">
+      <img src="ESPALDA COLORES.jpg" alt="Cruzado Nivel Primario">
+    </div>
+    <h3 style="margin-top: 40px; margin-bottom: 5px;">Cruzado</h3>
+    <h3 style="margin-top: 0;">Nivel Primario</h3>
+    <p>$17.600</p>
+  </div>
+
+  <div class="product">
+    <div class="imagen-doble" onclick="mostrarModal('Poncho Maestra Modelo VICKI', 26500, ['LIBERTY AZUL.jpg', 'MODELO VICKI.jpg', 'azulmarino.jpg'], ['Azul Francia', 'Blanco', 'Azul Marino'])">
+      <img src="LIBERTY AZUL.jpg" alt="Poncho Maestra Modelo VICKI">
+    </div>
+    <h3 style="margin-top: 40px; margin-bottom: 5px;">Poncho Maestra</h3>
+    <h3 style="margin-top: 0;">Modelo VICKI</h3>
+    <p>$26.500</p>
+  </div>
+
+  <div class="product">
+    <div class="imagen-doble" onclick="mostrarModal('Poncho Maestra Modelo MARINA', 26500, ['MODELO MARINA.jpg', 'mixto.jpg'], ['Turqueza', 'Mixto'])">
+      <img src="MODELO MARINA.jpg" alt="Poncho Maestra Modelo MARINA">
+      </div>
+    <h3 style="margin-top: 40px; margin-bottom: 5px;">Poncho Maestra</h3>
+    <h3 style="margin-top: 0;">Modelo MARINA</h3>
+    <p>$26.500</p>
+  </div>
+
+  <div class="product">
+    <div class="imagen-doble" onclick="mostrarModal('Poncho Maestra Modelo ALICIA', 26500, ['frente-alicia.jpg'], ['Celeste'])">
+      <img src="frente-alicia.jpg" alt="Poncho Maestra Modelo ALICIA">
+  </div>
+    <h3 style="margin-top: 40px; margin-bottom: 5px;">Poncho Maestra</h3>
+    <h3 style="margin-top: 0;">Modelo ALICIA</h3>
+    <p>$26.500</p>
+  </div>
+
+  <div class="product">
+    <div class="imagen-doble" onclick="mostrarModal('Poncho Maestra Modelo JUANA', 27500, ['juana.jpg'], ['Rojo'])">
+      <img src="juana.jpg" alt="Poncho Maestra Modelo JUANA">
+      <img src="costado-juana.jpg" alt="Poncho Maestra Modelo JUANA">
+    </div>
+    <h3 style="margin-top: 40px; margin-bottom: 5px;">Poncho Maestra</h3>
+    <h3 style="margin-top: 0;">Modelo JUANA</h3>
+    <p>$27.500</p>
+  </div>
+
+  <div class="product">
+    <div class="imagen-doble" onclick="mostrarModal('Cruzado Maestra', 27500, ['frente-maestra.jpg'], ['Azul Marino', 'Blanco', 'Azul Francia'])">
+      <img src="frente-maestra.jpg" alt="Cruzado Maestra">
+      <img src="espalda-maestra.jpg" alt="Cruzado Maestra">
+    </div>
+    <h3 style="margin-top: 40px; margin-bottom: 5px;">Cruzado Maestra</h3>
+    <p style="margin-top: 30px;">$27.500</p>
+  </div>
+
+  </main>
+
+  <!-- CARRITO -->
+  <section id="cart">
+    <!-- MODAL DE GALERÍA -->
+  <div id="galeria-modal" onclick="cerrarGaleria()" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background-color:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000;">
+    <img id="galeria-img" src="" style="max-width:90%; max-height:90%;">
+  </div>
+
+    <h2>Carrito</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0</span></p>
+    <button onclick="finalizarCompra()">Finalizar compra</button>
+  </section>
+
+  <!-- MODAL DETALLE DEL PRODUCTO -->
+<div id="producto-modal" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:2000;">
+  <div style="background:white; padding:20px; max-width:400px; width:90%; border-radius:10px; text-align:center; position:relative;">
+    <button onclick="cerrarModal()" style="position:absolute; top:10px; right:10px;">✖</button>
+    <img id="modal-img" src="">
+    <h3 id="modal-nombre"></h3>
+    <div class="options">
+      <label>Color:
+        <select id="modal-color">
+          <option>Rojo</option>
+          <option>Azul</option>
+          <option>Verde</option>
+          <option>Amarillo</option>
+          <option>Naranja</option>
+          <option>Turqueza</option>
+          <option>Rosa</option>
+          <option>Violeta</option>
+          <option>Blanco</option>
+          <option>Fuxcia</option>
+          <option>Celeste</option>
+        </select>
+      </label><br><br>
+      <p>
+  Talle: 
+  <span id="texto-hola" class="hola-link" 
+        onclick="mostrarPopup(document.getElementById('producto-modal').getAttribute('data-nombre'))" 
+        style="display:none; cursor:pointer; color:#e91e63; text-decoration:underline;">
+    ¿Cómo tomar medidas?
+  </span>
 </p>
-<div id="pie-final">
-  <!-- acá tus redes sociales, textos y links -->
+
+        <select id="modal-talle"></select>
+
+      </label><br><br>
+      <label>Cantidad:
+        <input type="number" id="modal-cantidad" min="1" value="1">
+      </label><br><br>
+      <label>Nombre a bordar:
+        <input type="text" id="modal-bordado" placeholder="Ej: Martina" />
+      </label>
+    </div>
+    <p id="modal-precio"></p>
+    <button onclick="agregarDesdeModal()">Agregar al carrito</button>
+  </div>
 </div>
 
-  <div style="margin: 10px 0; font-size: 0.9em;">
-    <small>Copyright © 2025. Todos los derechos reservados.</small>
-  </div>
-</footer>
-
-<script>
-
-  let ultimaPosicion = posicionActual;
-  window.addEventListener("scroll", function () {
-    let posicionActual = window.scrollY;
-
-    if (posicionActual > ultimaPosicion && posicionActual > document.body.scrollHeight - window.innerHeight - 2000) {
-      // Ocultar cuando baja y está cerca del pie de página
-      botonUrgencias.style.display = "none";
-    } else {
-      // Mostrar cuando sube
-      botonUrgencias.style.display = "block";
-    }
-
-  });
-</script>
-
-<!-- CARTEL DE COOKIES CON ESTILO UNIFICADO -->
+<!-- CARTEL DE COOKIES -->
 <div id="cookie-banner" style="
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  background: black; /* mismo fondo que la página */
-  padding: 12px 20px;
+  background-color: white;
+  color: #0060ac;
+  padding: 10px 20px;
   text-align: center;
   font-size: 14px;
-  color: #0077cc; /* texto gris oscuro para buena lectura */
-  box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 -1px 5px rgba(0,0,0,0.2);
   z-index: 9999;
+  font-family: 'Segoe UI', Arial, sans-serif;
 ">
   Este sitio utiliza cookies para mejorar tu experiencia. Al navegar, aceptás su uso.
   <button onclick="aceptarCookies()" style="
     margin-left: 12px;
-    background-color: #0077cc; /* mismo azul que Defensa del Consumidor */
+    background-color: #0077cc;
     color: white;
     border: none;
     padding: 6px 14px;
@@ -1202,8 +778,172 @@ const movableImages = document.querySelectorAll('.img-movable');
   ">Aceptar</button>
 </div>
 
-<!-- SCRIPT DE COOKIES -->
+  <!-- SCRIPT -->
 <script>
+  let cart = [];
+  let total = 0;
+
+  let imagenesGaleria = [];
+  let coloresGaleria = [];
+  let imagenActual = 0;
+
+  function cargarTalles(nombreProducto) {
+  const talleSelect = document.getElementById("modal-talle");
+  talleSelect.innerHTML = "";
+
+  let talles = [];
+
+  // Grupo 1: Ponchito Cuadrille y Cruzado Cuadrille
+  const grupo1 = [
+    "Ponchito Cuadrille Personalizado",
+    "Ponchito Cuadrille Clásico",
+    "Cruzado Cuadrille Personalizado",
+    "Cruzado Cuadrille Clásico",
+    "Ponchito/Cruzado Acrocel"
+  ];
+
+  // Grupo 2: Ponchos de nivel primario
+  const grupo2 = [
+    "Poncho un Bolsillo Nivel Primario",
+    "Poncho dos Bolsillos Nivel Primario",
+    "Poncho Escote V Nivel Primario",
+    "Cruzado Nivel Primario"
+  ];
+
+  // Grupo 3: Maestra
+  const grupo3 = [
+    "Poncho Maestra Modelo VICKI",
+    "Poncho Maestra Modelo MARINA",
+    "Poncho Maestra Modelo ALICIA",
+    "Poncho Maestra Modelo JUANA",
+    "Cruzado Maestra"
+  ];
+
+  if (grupo1.includes(nombreProducto)) {
+    talles = ["2", "3", "4", "5", "6", "7", "8"];
+  } else if (grupo2.includes(nombreProducto)) {
+    talles = ["6", "8", "10", "12", "14", "16"];
+  } else if (grupo3.includes(nombreProducto)) {
+    talles = ["1-S", "2-M", "3-L", "4-XL"];
+  }
+
+  talles.forEach(talle => {
+    const option = document.createElement("option");
+    option.value = talle;
+    option.textContent = talle;
+    talleSelect.appendChild(option);
+  });
+}
+
+  // Cambiar imagen al cambiar el color (fuera de mostrarModal, sólo se define una vez)
+  document.getElementById("modal-color").addEventListener("change", function () {
+    const colorSeleccionado = this.value;
+    const index = coloresGaleria.indexOf(colorSeleccionado);
+
+    if (index !== -1 && imagenesGaleria[index]) {
+      document.getElementById("modal-img").src = imagenesGaleria[index];
+      imagenActual = index;
+    }
+  });
+
+  // Cambiar imagen al hacer click en la imagen (ciclo adelante)
+  document.getElementById("modal-img").addEventListener("click", function () {
+    imagenActual = (imagenActual + 1) % imagenesGaleria.length;
+    this.src = imagenesGaleria[imagenActual];
+
+    // Actualizar el color en el selector
+    if (coloresGaleria.length > imagenActual) {
+      document.getElementById("modal-color").value = coloresGaleria[imagenActual];
+    }
+  });
+
+  function cerrarModal() {
+    document.getElementById("producto-modal").style.display = "none";
+  }
+
+  function agregarDesdeModal() {
+  const nombre = document.getElementById("producto-modal").getAttribute("data-nombre");
+  const precio = parseInt(document.getElementById("producto-modal").getAttribute("data-precio"));
+  const color = document.getElementById("modal-color").value;
+  const talle = document.getElementById("modal-talle").value;
+  const cantidad = parseInt(document.getElementById("modal-cantidad").value);
+  const bordado = document.getElementById("modal-bordado").value.trim();
+
+  const productosConNombreObligatorio = [
+    "Ponchito Cuadrille Personalizado",
+    "Cruzado Cuadrille Personalizado"
+  ];
+
+  // Validar nombre a bordar SOLO para productos personalizados indicados
+  if (productosConNombreObligatorio.includes(nombre) && bordado === "") {
+    alert("Por favor completá el nombre a bordar.");
+    return; // corta la función para no agregar al carrito
+  }
+
+  const totalItem = precio * cantidad;
+
+  cart.push({ nombre, color, talle, cantidad, bordado, totalItem });
+  total += totalItem;
+  updateCart();
+  cerrarModal();
+}
+
+  function updateCart() {
+    const lista = document.getElementById("cart-items");
+    const totalSpan = document.getElementById("cart-total");
+    const count = document.getElementById("cart-count");
+
+    lista.innerHTML = "";
+    cart.forEach((item, index) => {
+      const li = document.createElement("li");
+      let textoBordado = item.bordado ? `, Bordado: ${item.bordado}` : '';
+      li.innerHTML = `${item.nombre} - Color: ${item.color}, Talle: ${item.talle}, Cantidad: ${item.cantidad}${textoBordado} - $${item.totalItem} <button onclick="removeFromCart(${index})">❌</button>`;
+      lista.appendChild(li);
+    });
+
+    totalSpan.textContent = total;
+    count.textContent = cart.length;
+    document.getElementById("cart").style.display = cart.length > 0 ? "block" : "none";
+  }
+
+  function removeFromCart(index) {
+    total -= cart[index].totalItem;
+    cart.splice(index, 1);
+    updateCart();
+  }
+
+  function finalizarCompra() {
+    if (cart.length === 0) {
+      alert("Tu carrito está vacío");
+      return;
+    }
+
+    const resumen = cart.map(item => {
+      let textoBordado = item.bordado ? `, Bordado: ${item.bordado}` : '';
+      return `• ${item.nombre} - Color: ${item.color}, Talle: ${item.talle}, Cantidad: ${item.cantidad}${textoBordado} - $${item.totalItem}`;
+    }).join("\n");
+    const mensaje = `Hola, quiero comprar:\n${resumen}\nTotal: $${total}`;
+    const telefono = "5491166434129";
+    const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, "_blank");
+  }
+
+  function abrirGaleria(lista) {
+    imagenesGaleria = lista;
+    imagenActual = 0;
+    document.getElementById("galeria-img").src = imagenesGaleria[imagenActual];
+    document.getElementById("galeria-modal").style.display = "flex";
+  }
+
+  function cerrarGaleria() {
+    document.getElementById("galeria-modal").style.display = "none";
+  }
+
+  document.getElementById("galeria-modal").addEventListener("click", function () {
+    imagenActual = (imagenActual + 1) % imagenesGaleria.length;
+    document.getElementById("galeria-img").src = imagenesGaleria[imagenActual];
+  });
+
   function aceptarCookies() {
     document.getElementById('cookie-banner').style.display = 'none';
     localStorage.setItem('cookies-aceptadas', 'true');
@@ -1215,18 +955,391 @@ const movableImages = document.querySelectorAll('.img-movable');
     });
   }
 </script>
-<div class="seo-links" style="display:none;">
-<a href="/servicio-eléctrico-de-emergencia-24/7.html">Servicio eléctrico de emergencia 24/7</a>
-<a href="/electricista-urgente-a-domicilio---24-horas.html">Electricista urgente a domicilio - 24 horas</a>
-<a href="/electricista-24-horas-en-CABA-y-Gran-BS-AS.html">Electricista 24 horas en CABA y Gran BS AS</a>
-<a href="/electricista-urgente-24hs-para-cortes-de-luz-y-fallas-eléctricas.html">Electricista urgente 24hs para cortes de luz y fallas eléctricas</a>
-<a href="/electricista-profesional-24/7---Garantía-y-precio-justo.html">Electricista profesional 24/7 - Garantía y precio justo</a>
-<a href="/¿Corte-de-luz?-Electricista-24hs-al-rescate.html">¿Corte de luz? Electricista 24hs al rescate</a>
-<a href="/electricista-24hs-con-experiencia-y-garantía.html">Electricista 24hs con experiencia y garantía</a>
-<a href="/electricista-matriculado-24-horas-para-tu-seguridad.html">Electricista matriculado 24 horas para tu seguridad</a>
-<a href="/electricista-disponible-día-y-noche-para-tu-hogar-o-negocio.html">Electricista disponible día y noche para tu hogar o negocio</a>
-<a href="/electricista-urgente-24-horas-en-tu-barrio.html">Electricista urgente 24 horas en tu barrio</a>
+
+  <footer>
+  <!-- Columna izquierda -->
+<div class="columna-footer">
+  <h4>Medios de pago</h4>
+  <div class="medios-iconos" style="display: flex; gap: 15px; align-items: center;">
+    <!-- VISA -->
+  <img src="visa.jpg" alt="Visa" style="max-width: 60px; height: auto; display: block;">
+
+<!-- MASTERCARD -->
+  <img src="mastercard.jpg" alt="Mastercard" style="max-width: 60px; height: auto; display: block;">
+
+<!-- MERCADO PAGO -->
+  <img src="mercadopago.jpg" alt="Mercado Pago" style="max-width: 90px; height: auto; display: block;">
+  
+<!-- DESCUENTO -->
+  <img src="descuento.jpg" alt="Mercado Pago" style="max-width: 130px; height: auto; display: block;">
+
+  </div>
+
+  <h4 style="margin-top: 20px;">Medios de envío</h4>
+
+<!-- Imágenes de medios de envío una al lado de la otra -->
+<div class="medios-iconos" style="
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+">
+  <img src="correoargentino.jpg" alt="Correo Argentino" style="max-width: 60px; height: auto;">
+  <img src="andreani.jpg" alt="Andreani" style="max-width: 60px; height: auto;">
+  <img src="oca.jpg" alt="Andreani" style="max-width: 60px; height: auto;">
+  </div>
+
+<!-- Botón externo para calcular en Envia.com -->
+<div style="text-align: 50px; margin-bottom: 15px;">
+  <a href="https://envia.com/es-AR/cotizar-envio" target="_blank" style="
+    display: inline-block;
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  ">
+    🚚 Calculá el costo de envío
+  </a>
 </div>
 
+<script>
+function simularCalculo() {
+  const cp = document.getElementById('codigo-postal').value.trim();
+  const resultado = document.getElementById('resultado-envio');
+
+  if (!cp.match(/^\d{4}$/)) {
+    alert("Ingresá un código postal válido.");
+    resultado.style.display = 'none';
+    return;
+  }
+
+  resultado.style.display = 'block';
+}
+</script>
+
+</div>
+
+  <!-- Columna derecha -->
+<div class="columna-footer" style="margin-left: -150px;">
+  <h4 style="color: black;">Redes sociales</h4>
+  <div class="redes-iconos" style="display: flex; gap: 15px;">
+    <a href="https://www.facebook.com/delantales.escolares" target="_blank" aria-label="Facebook" style="display: inline-block; width: 32px; height: 32px; cursor: pointer;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1877F2" width="32px" height="32px">
+        <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.333v21.333C0 23.403.597 24 1.325 24H12.82v-9.294H9.692v-3.622h3.127V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.466.099 2.798.143v3.24l-1.92.001c-1.505 0-1.797.716-1.797 1.765v2.316h3.59l-.467 3.622h-3.123V24h6.116C23.403 24 24 23.403 24 22.667V1.333C24 .597 23.403 0 22.675 0z"/>
+      </svg>
+    </a>
+    <a href="https://www.instagram.com/delantalesescolares" target="_blank" aria-label="Instagram" style="display: inline-block; width: 32px; height: 32px; cursor: pointer;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#E4405F" width="32px" height="32px">
+        <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm4.75-.88a1.13 1.13 0 110 2.25 1.13 1.13 0 010-2.25z"/>
+      </svg>
+    </a>
+    <a href="https://www.pinterest.com/gabrieladelafore" target="_blank" aria-label="Pinterest" style="display: inline-block; width: 32px; height: 32px; cursor: pointer;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#BD081C" width="32px" height="32px">
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 5.063 3.163 9.4 7.63 11.044-.106-.94-.2-2.386.042-3.418.217-.935 1.396-5.953 1.396-5.953s-.357-.713-.357-1.765c0-1.653.958-2.89 2.15-2.89 1.014 0 1.503.761 1.503 1.674 0 1.02-.652 2.542-.988 3.958-.282 1.185.6 2.15 1.776 2.15 2.133 0 3.776-2.25 3.776-5.5 0-2.865-2.06-4.87-5-4.87-3.406 0-5.403 2.55-5.403 5.187 0 1.034.397 2.145.89 2.75.098.118.112.22.082.34-.09.374-.29 1.185-.33 1.35-.05.22-.16.267-.374.16-1.393-.646-2.26-2.675-2.26-4.31 0-3.506 2.545-6.73 7.33-6.73 3.842 0 6.83 2.75 6.83 6.43 0 3.846-2.42 6.95-5.79 6.95-1.13 0-2.19-.588-2.55-1.277l-.69 2.635c-.25.955-.928 2.15-1.38 2.882 1.04.32 2.15.49 3.3.49 6.627 0 12-5.373 12-12S18.627 0 12 0z"/>
+      </svg>
+    </a>
+  </div>
+
+  <h4 style="margin-top: 20px; color: black;">Contacto</h4>
+
+<!-- Contacto correo -->
+<div class="contacto" style="color: black; display: flex; align-items: center; cursor: pointer; margin-bottom: 8px;">
+  <a href="mailto:gabrieladelafore@gmail.com" 
+     style="text-decoration: none; color: black; display: flex; align-items: center; line-height: 1;">
+    <img src="correo.jpg" alt="Email" style="width: 30px; height: 30px; margin-right: 5px; vertical-align: middle; object-fit: contain;">
+    gabrieladelafore@gmail.com
+  </a>
+</div>
+
+<!-- Contacto teléfono -->
+<div class="contacto" style="color: black; display: flex; align-items: center; cursor: pointer; margin-bottom: 8px;">
+  <a href="tel:+541166434129" 
+     style="text-decoration: none; color: black; display: flex; align-items: center; line-height: 1;">
+    <img src="telefono.jpg" alt="Teléfono" style="width: 30px; height: 30px; margin-right: 5px; vertical-align: middle; object-fit: contain;">
+    (11) 6643-4129
+  </a>
+</div>
+
+<!-- Dirección -->
+<div class="contacto" style="color: black; display: flex; align-items: center; margin-bottom: 8px;">
+  <img src="direccion.jpg" alt="Ubicación" style="width: 30px; height: 30px; margin-right: 5px; vertical-align: middle; object-fit: contain;">
+  CABA, CP1425
+</div>
+
+<div style="display: flex; flex-direction: column; align-items: flex-end; gap: 8px; margin-bottom: 8px;">
+
+  <!-- Botón Dejanos tu opinión (más grande) -->
+  <a href="https://g.page/r/CSMAddlTonAMEBM/review" target="_blank" 
+     style="
+       display: flex;
+       align-items: center;
+       background-color: #000000;
+       color: #ffffff;
+       font-weight: bold;
+       padding: 12px 20px;
+       border-radius: 8px;
+       text-decoration: none;
+       box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+       font-size: 18px;
+       cursor: pointer;
+     margin-top: -190px; /* Esto lo sube 5px */
+   ">
+     
+    <!-- 5 Estrellas más grandes -->
+    <span style="color: #ffcc00; font-size: 30px; margin-right: 14px; line-height: 1;">
+      ★★★★★
+    </span>
+    
+    Dejanos tu opinión
+  </a>
+
+  <!-- Defensa del Consumidor -->
+  <a href="https://www.argentina.gob.ar/economia/industria-y-comercio/defensadelconsumidor" 
+     target="_blank"
+     style="display: flex; align-items: center; color: black; text-decoration: none; font-size: 20px;">
+    <img src="defensadelconsumidor.jpg" alt="web" style="width: 40px; height: 210px; margin-right: 8px; object-fit: contain;">
+    Defensa del Consumidor
+  </a>
+  
+</div>
+
+<a href="https://wa.me/5491166434129" target="_blank" class="whatsapp-flotante" aria-label="WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+</a>
+
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+
+  <!-- Scripts al final del body -->
+<script>
+function mostrarPopup(producto) {
+  const popup = document.getElementById('popup');
+  const img1 = document.getElementById('popup-img1');
+  const img2 = document.getElementById('popup-img2');
+  const img3 = document.getElementById('popup-img3');
+  const img4 = document.getElementById('popup-img4');
+
+  img3.style.display = 'none';
+  img4.style.display = 'none';
+
+  if (
+    producto === "Ponchito Cuadrille Personalizado" ||
+    producto === "Ponchito Cuadrille Clásico"
+  ) {
+    img1.src = 'medidasab.jpg';
+    img2.src = 'tablaponchito.jpg';
+  } else if (
+    producto === "Poncho un Bolsillo Nivel Primario" ||
+    producto === "Poncho dos Bolsillos Nivel Primario"
+  ) {
+    img1.src = 'redondo2.jpg';
+    img2.src = 'poncho-primaria.jpg';
+  } else if (producto === "Poncho Escote V Nivel Primario") {
+    img1.src = 'escoteenv2.jpg';
+    img2.src = 'poncho-primaria.jpg';
+  } else if (producto === "Ponchito/Cruzado Acrocel") {
+    img1.src = 'medidasab.jpg';
+    img2.src = 'tablaponchito.jpg';
+    img3.src = 'tablacruzado.jpg';
+    img4.src = 'medidasab2.jpg';
+    img3.style.display = 'inline-block';
+    img4.style.display = 'inline-block';
+  } else if (
+    producto === "Cruzado Cuadrille Personalizado" ||
+    producto === "Cruzado Cuadrille Clásico"
+  ) {
+    img1.src = 'medidasab2.jpg';
+    img2.src = 'tablacruzado.jpg';
+  }
+  // Agrego estos nuevos productos al popup, con imágenes que decidas
+  else if (
+    producto === "Poncho Maestra Modelo VICKI" ||
+    producto === "Poncho Maestra Modelo MARINA" ||
+    producto === "Poncho Maestra Modelo ALICIA" ||
+    producto === "Poncho Maestra Modelo JUANA"
+  ) {
+    // Asumamos que tienen las mismas medidas que "Poncho un Bolsillo Nivel Primario"
+    img1.src = 'medidasmarina.jpg';
+    img2.src = 'modelo-poncho.jpg';
+  } else if (
+    producto === "Cruzado Nivel Primario"
+  ) {
+    // Asumamos que usan las mismas imágenes que Cruzado Cuadrille
+    img1.src = 'medidasab3.jpg';
+    img2.src = 'cruzadoprimaria.jpg';
+  } else if (
+    producto === "Cruzado Maestra"
+  ) {
+
+    img1.src = 'medidas-maestra.jpg'; // Acá vas a poner vos la imagen 1 después
+    img2.src = 'modelo-cruzado.jpg'; // Acá vas a poner vos la imagen 2 después
+
+  } else {
+    popup.style.display = 'none';
+    return;
+  }
+
+  popup.style.display = 'flex';
+}
+
+</script>
+
+    <!-- ... todo tu contenido antes ... -->
+
+  <!-- POPUP PARA LAS IMÁGENES DE MEDIDAS -->
+  <div id="popup" onclick="this.style.display='none'" 
+     style="display:none; 
+            position:fixed; top:0; left:0; right:0; bottom:0; 
+            background-color: rgba(0,0,0,0.8); 
+            justify-content:center; align-items:center; 
+            z-index:3000; cursor:pointer; flex-wrap: nowrap;">
+  <img id="popup-img1" src="" alt="Imagen 1" style="max-width: 23%; max-height: 80%; margin-right: 10px;">
+  <img id="popup-img2" src="" alt="Imagen 2" style="max-width: 23%; max-height: 80%; margin-right: 10px;">
+  <img id="popup-img3" src="" alt="Imagen 3" style="max-width: 23%; max-height: 80%; margin-right: 10px; display:none;">
+  <img id="popup-img4" src="" alt="Imagen 4" style="max-width: 23%; max-height: 80%; display:none;">
+</div>
+
+<script>
+function mostrarModal(nombre, precio, imagenes, colores = []) {
+  imagenesGaleria = imagenes;
+  coloresGaleria = colores;
+  imagenActual = 0;
+
+  // 🔽 Colores especiales para productos específicos
+if (nombre === "Poncho Maestra Modelo VICKI") {
+  coloresGaleria = ["Azul Francia", "Blanco", "Azul Marino"];
+} else if (nombre === "Cruzado Maestra") {
+  coloresGaleria = ["Azul Marino", "Blanco", "Azul Francia"];
+} else if (nombre === "Poncho Maestra Modelo MARINA") {
+  coloresGaleria = ["Turqueza", "Mixto"];
+}
+
+  document.getElementById("producto-modal").setAttribute("data-nombre", nombre);
+  document.getElementById("producto-modal").setAttribute("data-precio", precio);
+  document.getElementById("modal-img").src = imagenesGaleria[0];
+  document.getElementById("modal-nombre").innerText = nombre;
+  document.getElementById("modal-precio").innerText = `$${precio.toLocaleString("es-AR")}`;
+
+  const articulosConMedidas = [
+  "Ponchito Cuadrille Personalizado",
+  "Cruzado Cuadrille Personalizado",
+  "Ponchito Cuadrille Clásico",
+  "Cruzado Cuadrille Clásico",
+  "Ponchito/Cruzado Acrocel",
+  "Poncho un Bolsillo Nivel Primario",
+  "Poncho dos Bolsillos Nivel Primario",
+  "Poncho Escote V Nivel Primario",
+  "Cruzado Nivel Primario",
+  "Poncho Maestra Modelo VICKI",
+  "Poncho Maestra Modelo MARINA",
+  "Poncho Maestra Modelo ALICIA",
+  "Poncho Maestra Modelo JUANA",
+  "Cruzado Maestra"
+];
+
+const articulosConBordado = [
+  "Ponchito Cuadrille Personalizado",
+  "Cruzado Cuadrille Personalizado"
+];
+
+if (articulosConMedidas.includes(nombre)) {
+  document.getElementById("texto-hola").style.display = "inline-block";
+} else {
+  document.getElementById("texto-hola").style.display = "none";
+}
+
+  // Mostrar modal
+  document.getElementById("producto-modal").style.display = "flex";
+
+  const campoBordado = document.getElementById("modal-bordado").parentElement;
+if (articulosConBordado.includes(nombre)) {
+  campoBordado.style.display = "block";
+} else {
+  campoBordado.style.display = "none";
+}
+
+   // Cargar select de colores dinámicamente
+  const selectColor = document.getElementById("modal-color");
+  selectColor.innerHTML = ""; // limpiamos opciones anteriores
+
+  coloresGaleria.forEach(color => {
+    const opcion = document.createElement("option");
+    opcion.value = color;
+    opcion.textContent = color;
+    selectColor.appendChild(opcion);
+  });
+
+  // Seleccionamos el primero por defecto si existe
+  if (coloresGaleria.length > 0) {
+    selectColor.value = coloresGaleria[0];
+  }
+
+  // 🔑 IMPORTANTE: cargar los talles según el producto
+  cargarTalles(nombre);
+}
+</script>
+<!-- Footer fijo inferior -->
+<footer style="
+  width: 100%;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-size: 20px;
+  color: #555;
+  margin-top: -20px;
+  padding: 0px 0;
+">
+  <div id="copyright-footer" style="
+    display: inline-block;
+    transform: translateX(-150px); /* 🟢 Ajustalo como quieras */
+  ">
+    Copyright © 2025. Todos los derechos reservados.
+  </div>
+</footer>
+
+<script>
+  // Validación del "Nombre a bordar" solo para productos personalizados específicos
+      const productosConNombre = [
+      "ponchito cuadrille personalizado",
+      "cruzado cuadrille personalizado"
+    ];
+
+    const nombreProducto = document.querySelector("#producto-modal")?.getAttribute("data-nombre")?.trim().toLowerCase();
+
+    if (productosConNombre.includes(nombreProducto)) {
+      const inputNombre = document.querySelector('input[name="properties[Nombre a bordar]"]');
+      if (!inputNombre || inputNombre.value.trim() === "") {
+        alert("Por favor completá el nombre a bordar.");
+        e.preventDefault();
+        return false;
+      }
+    }
+</script>
+<div class="seo-texto-oculto">
+  delantales escolares personalizados, delantales escolares con nombre, bordado con nombre infantil, bordado para maestras, ponchito cuadrille personalizado, cruzado cuadrille personalizado, ponchito cuadrille clásico, cruzado cuadrille clásico, ponchito cruzado acrocel, poncho un bolsillo nivel primario, poncho dos bolsillos nivel primario, poncho escote V nivel primario, cruzado nivel primario, poncho maestra modelo vicki, poncho maestra modelo marina, poncho maestra modelo alicia, poncho maestra modelo juana, cruzado maestra, ropa escolar personalizada, uniformes escolares bordados, guardapolvos escolares originales, delantales escolares nivel inicial, delantales escolares nivel primario, delantales escolares docentes, delantales para maestras de jardín, delantales escolares jardín maternal, delantales para docentes primario, ropa escolar moderna, ponchos escolares de colores, ponchos escolares con bolsillos, delantales infantiles bordados, ropa de trabajo escolar, ropa para maestras con nombre, uniformes escolares nivel inicial, ropa escolar para docentes, delantales para actos escolares, delantales escolares con bolsillo, modelos de ponchos escolares, talles de delantales escolares, cómo tomar medidas del delantal, delantales escolares con envío, venta de delantales escolares, tienda de delantales escolares, comprar delantales escolares por whatsapp, catálogo de delantales escolares, delantales escolares zona sur, delantales escolares CABA, delantales escolares GBA, delantales escolares Argentina, delantales escolares online, bordado con nombre del niño, delantal personalizado para jardín, ropa escolar con diseño, ponchos infantiles escolares, delantal jardín infantil personalizado, delantales escolares originales, poncho escolar de colores, delantales escolares para maestras jardineras, cómo elegir el talle del delantal, envío por Correo Argentino, envío por Andreani, calcular envío delantal escolar, comprar delantal personalizado con nombre, regalo para seño del jardín, bordados escolares para nenas y nenes, nombres bordados para maestras, ponchos bordados para jardín, cruzado escolar con bolsillos, ropa escolar sin bordado, delantales escolares económicos, promociones en delantales escolares, ponchos para maestras con estilo, bordados únicos para jardín, pedidos por WhatsApp, ropa para docentes nivel inicial, ponchos de maestra bordados, delantal para preescolar personalizado, bordado para nombre de niño o niña, regalos personalizados escolares, bordado escolar exclusivo, cómo pedir mi delantal por WhatsApp, poncho con escote V para maestra, guardapolvo personalizado nivel inicial, delantales escolares resistentes, talles reales de delantales escolares, uniformes escolares modernos, ropa escolar argentina bordada, ropa para seños de jardín, ropa escolar para maestras del interior, delantales escolares hechos a mano, delantal de colores con bordado, nombres para bordar en delantales, ropa de trabajo para maestras jardineras, comprar delantales en línea, ropa escolar con bordado incluido, ponchito para nene de jardín, delantales escolares sin stock, modelos exclusivos de delantales, bordado para nena jardín, bordado para nene nivel inicial, pedidos a medida por WhatsApp, envío de delantales a todo el país.
+</div>
+<script>
+  document.getElementById('cart-icon').addEventListener('click', () => {
+    // Mostrar el carrito (si está oculto)
+    const cart = document.getElementById('cart');
+    if (cart.style.display === 'none' || !cart.style.display) {
+      cart.style.display = 'block';
+    }
+    // Hacer scroll suave hacia el carrito
+    cart.scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+<div class="seo-links" style="display:none;">
+  <a href="https://delantalesescolares.com.ar/">Delantales escolares personalizados</a>
+  <a href="https://delantalesescolares.com.ar/">Delantales con nombre bordado</a>
+  <a href="https://delantalesescolares.com.ar/">Delantales para maestras de nivel inicial</a>
+  <a href="https://delantalesescolares.com.ar/">Delantales originales para jardín</a>
+  <a href="https://delantalesescolares.com.ar/">Delantales infantiles</a>
+</div>
+<a href="comocomprar.html" class="boton-flotante-logo" title="Ver más información">
+  <img src="comocomprar.jpg" alt="Botón de Información" />
+</a>
+
 </body>
-</html>
