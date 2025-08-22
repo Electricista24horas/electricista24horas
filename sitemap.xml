@@ -1,33 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset 
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://electricista24horas.com.ar/</loc>
+    <lastmod>2025-08-22</lastmod>
+  </url>
 
   <url>
     <loc>https://electricista24horas.com.ar/instalar.html</loc>
+    <lastmod>2025-08-22</lastmod>
   </url>
-  <url>
-    <loc>https://electricista24horas.com.ar/</loc>
-  </url>
+
   <url>
     <loc>https://electricista24horas.com.ar/electricista-24hs.html</loc>
+    <lastmod>2025-08-22</lastmod>
   </url>
+
   <url>
     <loc>https://electricista24horas.com.ar/electricista-matriculado.html</loc>
+    <lastmod>2025-08-22</lastmod>
   </url>
+
   <url>
     <loc>https://electricista24horas.com.ar/electricista-capital-federal.html</loc>
+    <lastmod>2025-08-22</lastmod>
   </url>
+
   <url>
     <loc>https://electricista24horas.com.ar/electricista-gba.html</loc>
+    <lastmod>2025-08-22</lastmod>
   </url>
+
   <url>
     <loc>https://electricista24horas.com.ar/servicios-electricos.html</loc>
+    <lastmod>2025-08-22</lastmod>
   </url>
+
   <url>
     <loc>https://electricista24horas.com.ar/electricista-cerca.html</loc>
-  </url>
-  <url>
-    <loc>https://electricista24horas.com.ar/instalar.html</loc>
+    <lastmod>2025-08-22</lastmod>
   </url>
 
 </urlset>
